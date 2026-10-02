@@ -1,0 +1,11 @@
+{
+  "name": "@man/content-designer-extensions",
+  "version": "0.0.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "staffbase": {
+    "element": "content-designer-extensions",
+    "bundle": "dist/content-designer-extensions.js"
+  }
+}
