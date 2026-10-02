@@ -1,11 +1,10 @@
 {
-  "title": "content-designer-extensions",
-  "summary": "TODO: Ein Satz, was dieses Widget für Redakteure tut.",
-  "icon": "🧩",
+  "title": "Content-Designer-Erweiterungen",
+  "summary": "Ergänzt im Content Designer das Format-Auswahlfeld von Titel und Text um die MAN-Typo-Skala mit 13 Stufen — ohne eigenen Baustein auf der Seite.",
+  "icon": "🔠",
   "pages": [
     { "id": "overview", "title": "Übersicht", "file": "overview.md" },
     { "id": "usage", "title": "Schritt für Schritt", "file": "usage.md" },
-    { "id": "settings", "title": "Einstellungen", "file": "settings.md" },
     { "id": "faq", "title": "FAQ", "file": "faq.md" }
   ]
 }
