@@ -1,0 +1,22 @@
+{
+  "title": "Extensões para Designers de Conteúdo",
+  "summary": "No Content Designer, o campo de seleção de formato do título e do texto é complementado pela escala de erros de digitação MAN com 13 níveis — sem um módulo próprio na página.",
+  "icon": "🔠",
+  "pages": [
+    {
+      "id": "overview",
+      "title": "Visão geral",
+      "file": "overview.md"
+    },
+    {
+      "id": "usage",
+      "title": "Passo a passo",
+      "file": "usage.md"
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "file": "faq.md"
+    }
+  ]
+}

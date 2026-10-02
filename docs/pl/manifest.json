@@ -1,0 +1,22 @@
+{
+  "title": "Rozszerzenia Content Designera",
+  "summary": "W Content Designerze pole wyboru formatu tytułu i tekstu jest uzupełniane przez skalę literówek MAN z 13 poziomami — bez własnego modułu na stronie.",
+  "icon": "🔠",
+  "pages": [
+    {
+      "id": "overview",
+      "title": "Przegląd",
+      "file": "overview.md"
+    },
+    {
+      "id": "usage",
+      "title": "Krok po kroku",
+      "file": "usage.md"
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "file": "faq.md"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "title": "Content Designer Extensions",
+  "summary": "In the Content Designer, the format selection field of title and text is supplemented by the MAN typo scale with 13 levels — without its own module on the page.",
+  "icon": "🔠",
+  "pages": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "file": "overview.md"
+    },
+    {
+      "id": "usage",
+      "title": "Step by step",
+      "file": "usage.md"
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "file": "faq.md"
+    }
+  ]
+}

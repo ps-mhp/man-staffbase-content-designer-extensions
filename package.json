@@ -1,6 +1,6 @@
 {
   "name": "@man/content-designer-extensions",
-  "version": "0.0.0",
+  "version": "0.1.0-rc.1",
   "description": "Erweitert den Content Designer in Studio um die MAN-Typo-Skala (kein Frontend-Baustein).",
   "author": "",
   "license": "ISC",

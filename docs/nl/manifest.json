@@ -1,0 +1,22 @@
+{
+  "title": "Content Designer extensies",
+  "summary": "In de Content Designer wordt het formaatselectieveld van titel en tekst aangevuld met de MAN-typefoutschaal met 13 niveaus — zonder een eigen module op de pagina.",
+  "icon": "🔠",
+  "pages": [
+    {
+      "id": "overview",
+      "title": "Overzicht",
+      "file": "overview.md"
+    },
+    {
+      "id": "usage",
+      "title": "Stap voor stap",
+      "file": "usage.md"
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "file": "faq.md"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "title": "Estensioni per Content Designer",
+  "summary": "Nel Content Designer, il campo di selezione del formato per titolo e testo è integrato dalla scala di refusi MAN con 13 livelli — senza un modulo proprio sulla pagina.",
+  "icon": "🔠",
+  "pages": [
+    {
+      "id": "overview",
+      "title": "Panoramica",
+      "file": "overview.md"
+    },
+    {
+      "id": "usage",
+      "title": "Passo dopo passo",
+      "file": "usage.md"
+    },
+    {
+      "id": "faq",
+      "title": "Domande frequenti",
+      "file": "faq.md"
+    }
+  ]
+}

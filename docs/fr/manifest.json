@@ -1,0 +1,22 @@
+{
+  "title": "Extensions de concepteur de contenu",
+  "summary": "Dans le Content Designer, le champ de sélection de format pour le titre et le texte est complété par l’échelle de fautes de frappe MAN avec 13 niveaux — sans module propre sur la page.",
+  "icon": "🔠",
+  "pages": [
+    {
+      "id": "overview",
+      "title": "Aperçu",
+      "file": "overview.md"
+    },
+    {
+      "id": "usage",
+      "title": "Étape par étape",
+      "file": "usage.md"
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "file": "faq.md"
+    }
+  ]
+}
