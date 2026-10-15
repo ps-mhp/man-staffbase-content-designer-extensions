@@ -48,7 +48,7 @@ export function studioCss(hideNativeOptions: boolean): string {
   const tokenRules = [...TOKENS.values()].map(
     (entry) =>
       `.ProseMirror [data-sbt="${entry.apply.token}"] [data-node-view-content]` +
-      `{font-size:${entry.px}px!important;line-height:${entry.lh}px!important}`,
+      `{font-size:${entry.px}px!important;line-height:${entry.lh}!important}`,
   );
   return [
     ...tokenRules,

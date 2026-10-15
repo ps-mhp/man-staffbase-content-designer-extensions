@@ -65,8 +65,10 @@ describe("syncTriggerLabel", () => {
 describe("studioCss", () => {
   it("bringt je Token eine Größe für die Vorschau mit", () => {
     const css = studioCss(true);
-    expect(css).toContain('.ProseMirror [data-sbt="display-2xl"] [data-node-view-content]{font-size:72px!important;line-height:86px!important}');
-    expect(css).toContain('.ProseMirror [data-sbt="body-xs"] [data-node-view-content]{font-size:12px!important;line-height:18px!important}');
+    // Zeilenhöhe als Faktor und ohne Einheit — dieselbe Craft-Stufe, die das
+    // Frontend-CSS in `man-theme` setzt.
+    expect(css).toContain('.ProseMirror [data-sbt="display-2xl"] [data-node-view-content]{font-size:72px!important;line-height:1.3!important}');
+    expect(css).toContain('.ProseMirror [data-sbt="body-xs"] [data-node-view-content]{font-size:12px!important;line-height:1.5!important}');
   });
 
   it("blendet native Optionen nur auf Wunsch aus", () => {

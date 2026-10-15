@@ -45,7 +45,10 @@ export function buildOption(entry: ScaleEntry, isActive: boolean, onPick: (entry
   label.textContent = entry.label;
   const meta = document.createElement("span");
   meta.className = "sbt-option-meta";
-  meta.textContent = `${entry.px}/${entry.lh}`;
+  // „72/1,3“: Pixel und Zeilenhöhen-Faktor. Das Komma ist die deutsche
+  // Schreibweise — der Dialog ist deutsch, und „72/1.3“ liest sich dort wie
+  // zwei Zahlen zu viel.
+  meta.textContent = `${entry.px}/${String(entry.lh).replace(".", ",")}`;
   label.append(meta);
   text.append(label);
   option.append(text);

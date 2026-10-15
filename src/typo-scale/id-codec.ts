@@ -20,7 +20,11 @@
  *   └───────────────── Namespace
  *
  * Staffbase übernimmt die ID unverändert als `data-c13y-id` ins Frontend, wo
- * das Safe-CSS sie per `[data-c13y-id^="sbt-<token>--"]` gestaltet.
+ * das Custom CSS des Content Designers sie per `[data-c13y-id^="sbt-<token>--"]`
+ * gestaltet. Dieses Blatt wird aus `man-theme` gebaut (`dist/man-designer.css`)
+ * und setzt auf den Bausteinen selbst bereits `font: … !important`; die
+ * Token-Regel dort braucht deshalb zwei Attribute im Selektor und ebenfalls
+ * `!important`. Siehe README.
  */
 
 const ID_PREFIX = "sbt-";

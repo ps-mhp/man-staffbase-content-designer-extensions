@@ -54,6 +54,17 @@ describe("augmentListbox", () => {
     expect(optionKeys(listbox)).toEqual(["display-2xl", "display-xl", "display-l", "display-m", "display-s", "h1"]);
   });
 
+  it("nennt je Stufe Größe und Zeilenhöhen-Faktor", () => {
+    const { listbox } = renderToolbar("title-toolbar");
+    const editor = fakeEditor([{ type: "title", attrs: { id: "t", format: "big" }, pos: 0 }], 0);
+
+    augmentListbox(listbox, () => editor);
+
+    // Craft führt die Zeilenhöhe als Faktor, nicht in Pixeln; das Komma ist
+    // die deutsche Schreibweise des Dialogs.
+    expect(listbox.querySelector<HTMLElement>('[data-sbt-key="display-2xl"] .sbt-option-meta')?.textContent).toBe("72/1,3");
+  });
+
   it("erweitert dasselbe Dropdown nur einmal", () => {
     const { listbox } = renderToolbar("title-toolbar");
     const editor = fakeEditor([{ type: "title", attrs: { id: "t" }, pos: 0 }], 0);

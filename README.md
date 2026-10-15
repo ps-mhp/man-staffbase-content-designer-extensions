@@ -8,8 +8,25 @@ Recherche „staffbase-editor-upgrade“ (Briefing 06), als Widget verpackt.
 Die Skala ergänzt das Format-Auswahlfeld von Title- und Text-Element um 13
 Stufen und speichert eine Zusatzstufe als Präfix der Block-ID
 (`sbt-<token>--<uuid>`). Staffbase rendert die ID als `data-c13y-id`, das
-Safe-CSS gestaltet sie. Ohne Safe-CSS und Theme-Typografie sehen Leser:innen
-die Zusatzstufen nicht (Briefing, Abschnitt 1).
+Custom CSS des Content Designers gestaltet sie. Ohne dieses CSS und die
+Theme-Typografie sehen Leser:innen die Zusatzstufen nicht (Briefing,
+Abschnitt 1).
+
+Dieses CSS ist **kein freies Textfeld**, sondern wird aus dem Schwesterrepo
+[`man-theme`](https://github.com/ps-mhp/man-theme) gebaut:
+`dist/man-designer.css` → Content Designer → Custom CSS. Von Hand ins Feld
+geschriebene Regeln überschreibt der nächste `tools/push.js` dort. Die
+Token-Regeln gehören deshalb nach `man-theme/src/02-typography/`, und sie
+müssen die Basisregeln desselben Blattes überstimmen —
+`[data-c13y-component="paragraph-block"]` trägt dort `font: var(--man-body)
+!important`, was Größe **und** Zeilenhöhe jedes Absatzes festlegt. Nötig sind
+also zwei Attribute im Selektor (Spezifität 0,2,0) plus `!important`.
+
+Die Werte sind die Craft-Skala: `px` entspricht
+`--craft-pp-font-size-<stufe>`, `lh` ist der Craft-Faktor
+(1,3 Display/Überschrift · 1,5 Fliesstext). Beide Seiten müssen dieselbe
+Stufe nennen, sonst zeigt die Vorschau im Editor etwas anderes als das
+Frontend.
 
 | Datei | Inhalt |
 | --- | --- |
