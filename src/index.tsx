@@ -16,7 +16,8 @@
  *
  * Der Weg über ein Widget ist nur das Vehikel: Staffbase lädt registrierte
  * Widget-Bundles in Studio in dasselbe Dokument wie den Editor, und dort kommt
- * der Code an die TipTap-Instanz. Was er dort tut, steht in `typo-scale/`.
+ * der Code an die TipTap-Instanz. Was er dort tut, steht in `typo-scale/`
+ * (Typo-Skala) und `valign/` (vertikale Ausrichtung in Container-Spalten).
  *
  * Wann Studio die Bundles lädt, bestimmt Studio: nicht beim Öffnen einer
  * Seite, sondern erst, wenn der Designer die Liste der eigenen Blöcke braucht
@@ -31,6 +32,7 @@ import { configurationSchema, uiSchema } from "./configuration-schema";
 import { startHidingOwnBlock } from "./hide-own-block";
 import { guarded, isDisabled, isStudioPage } from "./studio";
 import { startTypoScale } from "./typo-scale/start-typo-scale";
+import { startValign } from "./valign/start-valign";
 import icon from "../resources/content-designer-extensions.svg";
 import pkg from "../package.json";
 
@@ -68,6 +70,7 @@ export function startExtensions(): void {
   if (!isStudioPage() || isDisabled()) return;
   guarded("Baustein ausblenden", () => startHidingOwnBlock(BLOCK_LABEL));
   guarded("Typo-Skala", () => startTypoScale());
+  guarded("Vertikale Ausrichtung", () => startValign());
 }
 
 /**

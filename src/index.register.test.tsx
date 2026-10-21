@@ -16,9 +16,11 @@ import type { BlockDefinition, ExternalBlockDefinition } from "widget-sdk";
 const mockStartWidget = jest.fn().mockResolvedValue(undefined);
 const mockStartTypoScale = jest.fn(() => () => undefined);
 const mockStartHiding = jest.fn(() => () => undefined);
+const mockStartValign = jest.fn(() => () => undefined);
 
 jest.mock("@shared/dev-mode/start-widget", () => ({ startWidget: mockStartWidget }));
 jest.mock("./typo-scale/start-typo-scale", () => ({ startTypoScale: mockStartTypoScale }));
+jest.mock("./valign/start-valign", () => ({ startValign: mockStartValign }));
 jest.mock("./hide-own-block", () => ({ startHidingOwnBlock: mockStartHiding }));
 
 interface Host {
@@ -33,6 +35,7 @@ async function loadAndRegister(path: string): Promise<{ host: Host; definition: 
   mockStartWidget.mockClear();
   mockStartTypoScale.mockClear();
   mockStartHiding.mockClear();
+  mockStartValign.mockClear();
 
   jest.resetModules();
   await import("./index");
@@ -53,6 +56,7 @@ describe("Anmeldung des Widgets", () => {
     const { host, definition } = await loadAndRegister("/studio/content/page/abc/edit");
 
     expect(mockStartTypoScale).toHaveBeenCalledTimes(1);
+    expect(mockStartValign).toHaveBeenCalledTimes(1);
     expect(mockStartHiding).toHaveBeenCalledWith("Content-Designer-Erweiterungen");
     expect(host.defineBlock).toHaveBeenCalledTimes(1);
     expect(definition).toMatchObject({
@@ -67,6 +71,7 @@ describe("Anmeldung des Widgets", () => {
 
     expect(mockStartTypoScale).not.toHaveBeenCalled();
     expect(mockStartHiding).not.toHaveBeenCalled();
+    expect(mockStartValign).not.toHaveBeenCalled();
     expect(host.defineBlock).toHaveBeenCalledTimes(1);
   });
 
