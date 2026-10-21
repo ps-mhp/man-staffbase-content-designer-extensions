@@ -12,7 +12,7 @@ geändert — melden Sie das bitte dem Team, das die Widgets betreut.
 
 Antwort: Nein. Sie hat keinen sichtbaren Inhalt und erscheint deshalb nicht in
 der Liste „Block auswählen“. Sie wirkt nur im Format-Auswahlfeld von Titel und
-Text.
+Text und im Dialog „Container bearbeiten“.
 
 **Frage:** Im Editor sehe ich die Stufe, auf der veröffentlichten Seite nicht.
 
@@ -38,6 +38,27 @@ Setzen Sie die Stufe an der Kopie neu.
 
 Antwort: Gewollt: Body-Stufen gelten nur für Absätze. Die Erweiterung entfernt
 die nicht mehr passende Stufe beim nächsten Speichern.
+
+**Frage:** Im Dialog „Container bearbeiten“ fehlt der Abschnitt „Vertikale Ausrichtung“.
+
+Antwort: Die Erweiterung ist in Ihrem Browser-Tab noch nicht aktiv. Schalten
+Sie sie ein wie unter „Schritt für Schritt → Erweiterung einschalten“
+beschrieben und öffnen Sie den Dialog erneut. Der Abschnitt steht nur im Tab
+**Layout**.
+
+**Frage:** Warum sehe ich die Ausrichtung auf der veröffentlichten Seite nicht?
+
+Antwort: Prüfen Sie zuerst, ob die Spalten unterschiedlich viel Inhalt haben —
+sind sie gleich lang, gibt es nichts auszurichten. Auf dem Smartphone stehen
+die Spalten untereinander; dort wirkt die Ausrichtung bewusst nicht. Fehlt sie
+auch auf dem Desktop, ist das Custom CSS in Studio veraltet. Das richtet die
+Studio-Administration ein.
+
+**Frage:** Was bedeutet „wie Container“ bei einer Spalte?
+
+Antwort: Die Spalte übernimmt die Ausrichtung, die oben für den ganzen Container
+gewählt ist. Wählen Sie oben, mitte oder unten, gilt für diese Spalte die
+eigene Einstellung.
 
 **Frage:** Wie schalte ich die Erweiterung zur Fehlersuche in meinem Browser ab?
 

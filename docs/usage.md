@@ -36,21 +36,43 @@ wird. Einmal pro Browser-Tab genügt.
    **Display L**, **H1** oder **Body M**.
 3. Klicken Sie auf **Speichern**.
 
+## Spalteninhalte vertikal ausrichten
+
+1. Klicken Sie den Container an und dann in seiner Toolbar auf
+   **Container bearbeiten** (Stift-Symbol).
+2. Im Tab **Layout** finden Sie unter den Layout-Schaltflächen den Abschnitt
+   **„Vertikale Ausrichtung“**. Wählen Sie **oben**, **mitte** oder **unten** —
+   das gilt für alle Spalten des Containers.
+3. Soll eine Spalte abweichen: Wählen Sie in ihrer Zeile (**Spalte 1**,
+   **Spalte 2** …) die gewünschte Ausrichtung. **wie Container** übernimmt
+   wieder die Einstellung des Containers. Fahren Sie mit der Maus über eine
+   Zeile, ist die Spalte im Editor blau umrandet.
+4. Der Editor zeigt die Ausrichtung sofort. Mit **Strg+Z** (Mac: **⌘+Z**)
+   machen Sie eine Änderung rückgängig.
+5. Klicken Sie auf **Speichern**.
+
+Sichtbar wird die Ausrichtung nur, wenn die Spalten unterschiedlich viel Inhalt
+haben — die kürzere Spalte rückt dann nach unten oder in die Mitte.
+
 ## Regeln für die Redaktion
 
 1. Bearbeiten Sie Seiten mit Zusatzstufen nur mit aktiver Erweiterung. Ohne
    sie sehen Sie die Stufe im Editor nicht, sie wirkt für Leser:innen aber
    weiter.
-2. Setzen Sie die Stufe nach **Duplizieren** oder Kopieren neu: Die Kopie
-   bekommt keine Stufe mit.
-3. Vergeben Sie keine Zusatzstufe an Blöcke, auf die ein Sprunglink (Anker)
-   zeigt — das Setzen ändert die Kennung des Blocks, der Link ginge ins Leere.
+2. Setzen Sie Stufe und Ausrichtung nach **Duplizieren** oder Kopieren neu:
+   Die Kopie bekommt sie nicht mit.
+3. Vergeben Sie keine Zusatzstufe und keine Ausrichtung an Blöcke, auf die ein
+   Sprunglink (Anker) zeigt — das Setzen ändert die Kennung des Blocks, der
+   Link ginge ins Leere.
 4. Verwenden Sie einen Titel pro Seite und gliedern Sie darunter mit H2 bis H4.
 
 ## Wenn etwas nicht funktioniert
 
 1. Fehlt die Gruppe „MAN Typo-Skala“: Schalten Sie die Erweiterung wie oben
    beschrieben ein. Nach einem Neuladen des Browser-Tabs ist das erneut nötig.
-2. Sieht die Stufe im Editor richtig aus, auf der veröffentlichten Seite aber
-   nicht: Wenden Sie sich an die Studio-Administration — dann fehlt das
-   Custom CSS mit der Typo-Erweiterung.
+2. Fehlt im Tab **Layout** der Abschnitt „Vertikale Ausrichtung“: Auch dann
+   ist die Erweiterung nicht eingeschaltet. Klicken Sie danach den Container
+   erneut an und öffnen Sie den Dialog neu.
+3. Sieht die Stufe oder Ausrichtung im Editor richtig aus, auf der
+   veröffentlichten Seite aber nicht: Wenden Sie sich an die
+   Studio-Administration — dann fehlt das aktuelle Custom CSS.

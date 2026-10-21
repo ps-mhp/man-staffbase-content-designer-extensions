@@ -26,14 +26,26 @@ Die Gliederung der Seite bleibt dabei unverändert: Ein Titel ist immer die
 Hauptüberschrift der Seite, H2 bis H4 sind Zwischenüberschriften, Body-Stufen
 sind Absätze. Die Display-Stufen ändern nur die Größe.
 
+## Vertikale Ausrichtung in Container-Spalten
+
+Stehen in einem **Container** Spalten unterschiedlicher Länge nebeneinander,
+beginnt der Inhalt jeder Spalte bisher oben. Mit der Erweiterung legen Sie fest,
+ob er **oben**, in der **Mitte** oder **unten** steht — für den ganzen Container
+und, wenn nötig, abweichend für einzelne Spalten. Die Einstellung finden Sie im
+Dialog **Container bearbeiten** im Tab **Layout**.
+
+Auf Smartphones stehen die Spalten untereinander und sind nur so hoch wie ihr
+Inhalt. Dort ist keine Ausrichtung nötig und keine zu sehen.
+
 ## Was Leser:innen sehen
 
-Den Titel oder Absatz in der gewählten Größe. Damit das klappt, müssen in
-Studio zwei Dinge eingerichtet sein, um die sich die Studio-Administration
+Den Titel oder Absatz in der gewählten Größe und die Spalteninhalte in der
+gewählten Ausrichtung. Damit das klappt, müssen in Studio zwei Dinge
+eingerichtet sein, um die sich die Studio-Administration
 kümmert: das Custom CSS mit der Typo-Erweiterung (Content Designer → Custom CSS)
 und die Theme-Typografie (Look & Feel → Typografie). Fehlt das Custom CSS,
-sehen Leser:innen bei den Zusatzstufen die normale Größe — der Inhalt selbst
-bleibt korrekt.
+sehen Leser:innen bei den Zusatzstufen die normale Größe und die Spalteninhalte
+oben — der Inhalt selbst bleibt korrekt.
 
 ## Was Sie im CMS-Editor sehen
 
@@ -43,6 +55,9 @@ bleibt korrekt.
 - Das Auswahlfeld zeigt die aktive Stufe, z. B. „Display 2XL · 72“.
 - Blöcke mit einer Zusatzstufe tragen oben rechts ein dunkles Etikett mit
   ihrer Stufe, z. B. `display-2xl` — so erkennen Sie sie auf einen Blick.
+- Im Dialog **Container bearbeiten → Layout** steht unter den
+  Layout-Schaltflächen der Abschnitt **„Vertikale Ausrichtung“**. Die Spalten
+  im Editor zeigen die gewählte Ausrichtung sofort.
 
 ## Wann die Erweiterung bereitsteht
 
