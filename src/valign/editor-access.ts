@@ -88,12 +88,14 @@ export function findContainer(editor: TiptapEditor, baseId: string): ContainerSt
 /**
  * Als normale Editor-Transaktion: Rückgängig/Wiederholen wirken wie bei jeder
  * anderen Änderung. Kein `focus()` — der Dialog soll offen bleiben.
+ * `setNodeAttribute` statt `setNodeMarkup`: Letzteres ersetzt den Container-
+ * Node, Studio verliert die NodeSelection und schließt den Dialog.
  */
 function setToken(editor: TiptapEditor, node: PmNode, pos: number, token: string | undefined): void {
   const id = withToken(node.attrs.id, token);
   if (id === node.attrs.id) return;
   const { tr } = editor.state;
-  tr.setNodeMarkup(pos, undefined, { ...node.attrs, id });
+  tr.setNodeAttribute(pos, "id", id);
   editor.view.dispatch(tr);
 }
 

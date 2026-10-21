@@ -47,6 +47,8 @@ export interface PmSelection {
 
 export interface PmTransaction {
   setNodeMarkup(pos: number, type: undefined, attrs: Record<string, unknown>): PmTransaction;
+  /** Ändert nur ein Attribut (AttrStep) — Node-View und NodeSelection bleiben erhalten. */
+  setNodeAttribute(pos: number, attr: string, value: unknown): PmTransaction;
 }
 
 type NodeVisitor = (node: PmNode, pos: number) => boolean | void;

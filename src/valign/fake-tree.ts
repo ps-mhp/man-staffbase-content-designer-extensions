@@ -105,8 +105,8 @@ export function treeEditor(
     get state() {
       const pending: Array<[number, Record<string, unknown>]> = [];
       const tr = {
-        setNodeMarkup(pos: number, _type: undefined, attrs: Record<string, unknown>) {
-          pending.push([pos, attrs]);
+        setNodeAttribute(pos: number, attr: string, value: unknown) {
+          pending.push([pos, { ...at(pos).attrs, [attr]: value }]);
           return tr;
         },
         pending,
