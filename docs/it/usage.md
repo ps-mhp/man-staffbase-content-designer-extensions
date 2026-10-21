@@ -36,21 +36,43 @@ Studio non carica l'estensione finché un blocco personalizzato non viene modifi
    **Mostra L**, **H1** o **Corpo M**. 
 3. Clicca **Salva**. 
 
+## Allinea verticalmente i contenuti della colonna
+
+1. Clicca sul contenitore e poi clicca su
+   **Contenitore di modifica** (icona a matita). 
+2. Nella scheda **Layout**, sotto i pulsanti di layout, troverai il
+   **"Orientamento verticale"**. Seleziona **alto**, **centro** o **basso** — 
+   Questo vale per tutte le colonne del contenitore. 
+3. Se vuoi che una colonna differisca: nella sua riga (**colonna 1**), 
+   **colonna 2** ...) l'orientamento desiderato. **come contenitore** prende il sopravvento
+   l'impostazione del contenitore di nuovo. Sposta il mouse su un
+   riga, la colonna è delineata in blu nell'editor. 
+4. L'editor mostrerà immediatamente l'allineamento. Con **Ctrl+Z** (Mac: **⌘+Z**)
+   annulla un cambiamento. 
+5. Clicca su **Salva**. 
+
+L'allineamento è visibile solo se le colonne contengono quantità diverse di contenuto
+— la colonna più corta poi si sposta verso il basso o verso il centro. 
+
 ## Regole per i Curatori
 
 1. Modifica pagine con livelli aggiuntivi solo con un'estensione attiva. Nessuna
    Non vedi il livello nell'editor, ma funziona per i lettori
    continua. 
-2. Resetta il livello dopo **Duplicato** o Copia: La Copia
-   Non ha alcun gradino. 
-3. Non assegnare un livello aggiuntivo ai blocchi a cui è un collegamento di salto (ancora)
-   — impostandolo cambia l'identificatore del blocco, il link non andrebbe da nessuna parte. 
+2. Resetta il livello e l'orientamento dopo **Duplicare** o Copiare: 
+   Non nota la copia. 
+3. Non assegnare un livello o un allineamento aggiuntivo a blocchi che hanno un
+   Il collegamento di salto (ancora) mostra — l'impostazione cambia l'identificatore del blocco che è
+   Link non sarebbe andato da nessuna parte. 
 4. Usare un titolo per pagina e dividere sotto di esso con H2 a H4. 
 
 ## Quando qualcosa non funziona
 
 1. Se manca il gruppo "MAN Typo Scale": Cambia l'estensione come sopra
    . Dopo aver ricaricato la scheda del browser, questo è di nuovo necessario. 
-2. Il livello appare corretto nell'editor, ma nella pagina pubblicata
-   non: Contatta l'amministrazione dello Studio — poi il
-   CSS personalizzato con l'estensione Typo.
+2. Se la sezione "Allineamento Verticale" manca nella scheda **Layout**: Anche allora
+   L'estensione non è attivata. Poi clicca su
+   Di nuovo e riapri il dialogo. 
+3. Il passaggio o l'orientamento nell'editor appare corretto sul
+   pagina pubblicata: Si prega di contattare il
+   Amministrazione dello studio — allora manca l'attuale CSS personalizzato.

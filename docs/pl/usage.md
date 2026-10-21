@@ -36,21 +36,43 @@ Studio nie ładuje rozszerzenia, dopóki niestandardowy blok nie zostanie edytow
    **Wyświetlacz L**, **H1** lub **Ciało M**. 
 3. Kliknij **Zapisz**. 
 
+## Zawartość kolumny w pionowym wyrównaniu
+
+1. Kliknij na pojemnik, a potem kliknij na
+   **Edytuj kontener** (ikona ołówka). 
+2. W zakładce **Układ**, pod przyciskami układu, znajdziesz
+   **"Orientacja pionowa"**. Wybierz **górę**, **środek** lub **dolny** — 
+   Dotyczy to wszystkich kolumn kontenera. 
+3. Jeśli chcesz, aby kolumna się różniła: W jej wierszu (**kolumna 1**, 
+   **kolumna 2** ...) pożądana orientacja. **jako pojemnik** przejmuje kontrolę
+   Ustawienia kontenera ponownie. Przesuń myszkę na
+   wiersz, kolumna jest zaznaczona na niebiesko w edytorze. 
+4. Edytor natychmiast pokaże wyrównanie. Za pomocą **Ctrl+Z** (Mac: **⌘+Z**)
+   cofnij zmianę. 
+5. Kliknij **Zapisz**. 
+
+Wyrównanie jest widoczne tylko wtedy, gdy kolumny zawierają różne ilości treści
+— krótsza kolumna przesuwa się wtedy w dół lub na środek. 
+
 ## Zasady dla redaktorów
 
 1. Edytuj strony z dodatkowymi poziomami tylko przy aktywnym rozszerzeniu. Brak
    Nie widzisz tego poziomu w edytorze, ale działa dla czytelników
    kontynuuje. 
-2. Zresetuj poziom po **Zduplikuj** lub Kopiuj: Kopia
-   nie ma żadnego kroku. 
-3. Nie przypisuj dodatkowego poziomu blokom, do których jest łącznik skokowy (kotwica)
-   — jeśli ustawisz to, zmienia identyfikator bloku, link nie prowadzi donikąd. 
+2. Zresetuj poziom i orientację po **Zduplikuj** lub Kopiuj: 
+   Nie zauważa kopii. 
+3. Nie przypisuj dodatkowego poziomu ani wyrównania blokom, które mają
+   Link skokowy (kotwica) pokazuje — ustawienie zmienia identyfikator bloku, którym jest
+   Link nigdzie nie pójdzie. 
 4. Użyj jednego tytułu na stronę i podziel poniżej nim od H2 do H4. 
 
 ## Gdy coś nie działa
 
 1. Jeśli brakuje grupy "MAN Typo Scale": Zmień rozszerzenie jak powyżej
    . Po ponownym uruchomieniu zakładki przeglądarki jest to znowu konieczne. 
-2. Czy poziom wygląda poprawnie w edytorze, ale na opublikowanej stronie
-   nie: Skontaktuj się z administracją studia — wtedy
-   Własny CSS z rozszerzeniem Typo.
+2. Jeśli w zakładce **Układ** brakuje sekcji "Pionowe wyrównanie": Nawet wtedy
+   rozszerzenie nie jest włączone. Następnie kliknij
+   Ponownie i ponownie otwórz dialog. 
+3. Czy krok lub orientacja w edytorze wygląda poprawnie na
+   opublikowana strona: Prosimy o kontakt z
+   Administracja studia — wtedy brakuje obecnego niestandardowego CSS.

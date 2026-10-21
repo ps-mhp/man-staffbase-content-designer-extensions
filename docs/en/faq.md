@@ -12,7 +12,7 @@ changed — please report this to the team that maintains the widgets.
 
 Answer: No. It has no visible content and therefore does not appear in
 in the Select Block list. It only works in the Format selection field of Title and
-Text. 
+Text and in the "Edit Container" dialog. 
 
 **Question:** I see the level in the editor, but not on the published page. 
 
@@ -38,6 +38,27 @@ Reset the level on the copy.
 
 Answer: Intentional: Body levels only apply to paragraphs. Removed the extension
 the level that no longer matches the next time you save. 
+
+**Question:** In the "Edit Container" dialog, the "Vertical Alignment" section is missing. 
+
+Answer: The extension is not yet active in your browser tab. Toggle
+You can turn it on as described in "Turn on → extension step by step" 
+and open the dialog again. The section is only available in the tab
+**Layout**. 
+
+**Question:** Why don't I see the targeting on the published page? 
+
+Answer: First, check if the columns have different amounts of content — 
+If they are the same length, there is nothing to do. Standing on the smartphone
+the columns among each other; there the alignment deliberately does not work. If it is missing,
+even on the desktop, the custom CSS in Studio is deprecated. This
+Studio Administration. 
+
+**Question:** What does "like container" mean for a column? 
+
+Answer: The column inherits the orientation that is above for the whole container
+is selected. If you select top, middle, or bottom, the
+own attitude. 
 
 **Question:** How do I turn off the debugging extension in my browser? 
 

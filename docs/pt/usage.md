@@ -36,21 +36,43 @@ O Studio não carrega a extensão até que um bloco personalizado seja editado
    **Exibir L**, **H1** ou **Corpo M**. 
 3. Clique em **Salvar**. 
 
+## Alinhar verticalmente o conteúdo da coluna
+
+1. Clique no contêiner e depois clique em
+   **Contêiner de edição** (ícone de lápis). 
+2. Na aba **Layout**, sob os botões de layout, você encontrará o
+   **"Orientação vertical"**. Selecione **topo**, **meio** ou **embaixo** — 
+   isso se aplica a todas as colunas do contêiner. 
+3. Se você quiser que uma coluna seja diferente: Em sua linha (**coluna 1**, 
+   **coluna 2** ...) a orientação desejada. **como contêiner** assume
+   a configuração do contêiner novamente. Mova o mouse sobre um
+   linha, a coluna está delineada em azul no editor. 
+4. O editor mostrará o alinhamento imediatamente. Com **Ctrl+Z** (Mac: **⌘+Z**)
+   Desfaça uma mudança. 
+5. Clique em **Salvar**. 
+
+O alinhamento só é visível se as colunas conterem diferentes quantidades de conteúdo
+— a coluna mais curta então desce ou se move para o meio. 
+
 ## Regras para Editores
 
 1. Editar páginas com níveis adicionais apenas com uma extensão ativa. Nenhuma
    Você não vê o nível no editor, mas funciona para os leitores
    continua. 
-2. Resetar o nível após **Duplicar** ou Copiar: A Cópia
-   não ganha nenhum degrau. 
-3. Não atribua um nível adicional a blocos aos quais existe um jump link (âncora)
-   — ao configurá-lo, muda o identificador do bloco, o link não levaria a lugar nenhum. 
+2. Resetar o nível e a orientação após **Duplicar** ou Copiar: 
+   Ela não percebe o texto. 
+3. Não atribua um nível ou alinhamento adicional a blocos que possuam um
+   Jump link (âncora) mostra — a configuração altera o identificador do bloco que é
+   Link não iria a lugar nenhum. 
 4. Use um título por página e divida abaixo dele de H2 a H4. 
 
 ## Quando algo não funciona
 
 1. Se o grupo "MAN Typo Scale" estiver ausente: Troque a extensão como acima
    . Depois de recarregar a aba do navegador, isso é necessário novamente. 
-2. O nível parece correto no editor, mas na página publicada
-   not: Contato com a administração do estúdio — então o
-   CSS personalizado com a extensão Typo.
+2. Se a seção "Alinhamento Vertical" estiver ausente da aba **Layout**: Mesmo assim
+   A extensão não está ativada. Então clique no
+   De novo e reabra o diálogo. 
+3. O passo ou orientação no editor parece correto no
+   página publicada: Por favor, entre em contato com o
+   Administração do estúdio — então o CSS personalizado atual está ausente.

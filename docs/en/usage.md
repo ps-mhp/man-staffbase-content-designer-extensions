@@ -36,21 +36,43 @@ Studio doesn't load the extension until a custom block is edited
    **Display L**, **H1** or **Body M**. 
 3. Click **Save**. 
 
+## Vertically align column contents
+
+1. Click on the container and then click on
+   **Edit container** (pencil icon). 
+2. In the **Layout** tab, under the layout buttons, you will find the
+   **"Vertical Orientation"**. Select **top**, **middle** or **bottom** — 
+   this applies to all columns of the container. 
+3. If you want a column to differ: In its row (**column 1**, 
+   **column 2** ...) the desired orientation. **as container** takes over
+   the setting of the container again. Move the mouse over a
+   row, the column is outlined in blue in the editor. 
+4. The editor will show the alignment immediately. With **Ctrl+Z** (Mac: **⌘+Z**)
+   undo a change. 
+5. Click on **Save**. 
+
+The alignment is only visible if the columns contain different amounts of content
+— the shorter column then moves down or to the middle. 
+
 ## Rules for Editors
 
 1. Edit pages with additional levels only with an active extension. None
    you don't see the level in the editor, but it works for readers
    continues. 
-2. Reset the level after **Duplicate** or Copy: The Copy
-   doesn't get any step. 
-3. Do not assign an additional level to blocks to which a jump link (anchor)
-   — setting it changes the identifier of the block, the link would go nowhere. 
+2. Reset the level and orientation after **Duplicate** or Copy: 
+   She does not notice the copy. 
+3. Do not assign an additional level or alignment to blocks that have a
+   Jump link (anchor) shows — setting changes the identifier of the block that is
+   Link would go nowhere. 
 4. Use one title per page and divide below it with H2 to H4. 
 
 ## When something doesn't work
 
 1. If the "MAN Typo Scale" group is missing: Switch the extension as above
    . After reloading the browser tab, this is necessary again. 
-2. Does the level look correct in the editor, but on the published page
-   not: Contact the Studio administration — then the
-   Custom CSS with the Typo extension.
+2. If the "Vertical Alignment" section is missing from the **Layout** tab: Even then
+   the extension is not turned on. Then click the
+   again and reopen the dialog. 
+3. Does the step or orientation in the editor look correct on the
+   published page: Please contact the
+   Studio administration — then the current custom CSS is missing.

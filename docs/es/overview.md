@@ -26,14 +26,26 @@ La estructura de la página permanece sin cambios: un título es siempre el
 El título principal de la página, de H2 a H4, son subtítulos, niveles de cuerpo
 son tacones. Los niveles de la pantalla solo cambian el tamaño. 
 
+## Alineación vertical en columnas de contenedor
+
+Si hay columnas de diferentes longitudes una junto a otra en un **contenedor**, 
+El contenido de cada columna comienza en la parte superior. Con la extensión, especificas 
+ya sea **arriba**, en el **medio** o **abajo** — para todo el contenedor
+y, si es necesario, de forma diferente para columnas individuales. La configuración puede encontrarse en la
+Diálogo **Editar contenedor** en la pestaña de **Diseño**. 
+
+En los smartphones, las columnas están una debajo de otra y solo están tan altas como tú
+Contenido. No es necesario alinear allí y no se puede ver ninguno. 
+
 ## Lo que ven los lectores
 
-El título o párrafo en el tamaño seleccionado. Para que esto funcione, tienes que
-Hay que configurar cosas de Studio dos que el administrador de Studio pueda gestionar.
+El título o párrafo en el tamaño seleccionado y el contenido de la columna en el
+orientación elegida. Para que esto funcione, hay que hacer dos cosas en el Estudio.
+en torno a la cual la administración del estudio
 el CSS personalizado con la extensión Typo (Content Designer → Custom CSS)
 y la tipografía de temas (aspecto y tacto → tipografía). Si falta el CSS personalizado, 
-Los lectores ven el tamaño normal de los niveles adicionales — el contenido en sí
-sigue siendo correcto. 
+Los lectores ven el tamaño normal y el contenido de las columnas para los niveles adicionales
+top — el contenido en sí sigue siendo correcto. 
 
 ## Lo que ves en el editor CMS
 
@@ -43,6 +55,9 @@ sigue siendo correcto.
 - La caja de selección muestra el nivel activo, por ejemplo, "Display 2XL · 72“. 
 - Los bloques con un escalón adicional tienen una etiqueta oscura en la esquina superior derecha
   nivel, por ejemplo, 'display-2XL' — para que puedas reconocerlos de un vistazo. 
+- En el diálogo **Editar contenedor → diseño** se muestra bajo el
+  Botones de disposición de la sección "Alineación vertical". Las columnas
+  En el editor muestra la orientación seleccionada inmediatamente. 
 
 ## Cuando la expansión esté lista
 

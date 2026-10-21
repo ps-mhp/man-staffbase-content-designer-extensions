@@ -36,21 +36,43 @@ Studio no carga la extensión hasta que se edita un bloque personalizado
    **Mostrar L**, **H1** o **Cuerpo M**. 
 3. Haz clic en **Guardar**. 
 
+## Alinear verticalmente el contenido de la columna
+
+1. Haz clic en el contenedor y luego haz clic en
+   **Contenedor de edición** (icono de lápiz). 
+2. En la pestaña **Layout**, bajo los botones de diseño, encontrarás el
+   **"Orientación vertical"**. Selecciona **arriba**, **medio** o **abajo** — 
+   esto se aplica a todas las columnas del contenedor. 
+3. Si quieres que una columna sea diferente: En su fila (**columna 1**), 
+   **columna 2** ...) la orientación deseada. **como contenedor** toma el control
+   la configuración del contenedor otra vez. Mueve el ratón sobre una
+   fila, la columna está delineada en azul en el editor. 
+4. El editor mostrará la alineación inmediatamente. Con **Ctrl+Z** (Mac: **⌘+Z**)
+   Deshacer un cambio. 
+5. Haz clic en **Guardar**. 
+
+La alineación solo es visible si las columnas contienen diferentes cantidades de contenido
+— la columna más corta se mueve entonces hacia abajo o hacia el centro. 
+
 ## Normas para editores
 
 1. Editar páginas con niveles adicionales solo con una extensión activa. Ninguna
    No ves el nivel en el editor, pero funciona para los lectores
    continúa. 
-2. Reiniciar el nivel después de **Duplicar** o Copiar: La Copia
-   no tiene ningún paso. 
-3. No asignar un nivel adicional a los bloques a los que haya un enlace de salto (ancla)
-   — al configurarlo cambia el identificador del bloque, el enlace no llevaba a ninguna parte. 
+2. Restablecer el nivel y la orientación después de **Duplicar** o Copiar: 
+   No se da cuenta de la copia. 
+3. No asignar un nivel o alineación adicional a bloques que tengan un
+   El enlace de salto (ancla) muestra — la configuración cambia el identificador del bloque que es
+   Link no iría a ninguna parte. 
 4. Usar un título por página y dividir debajo de él de H2 a H4. 
 
 ## Cuando algo no funciona
 
 1. Si falta el grupo "MAN Typo Scale": Cambiar la extensión como se ha indicado anteriormente
    . Después de recargar la pestaña del navegador, esto vuelve a ser necesario. 
-2. ¿El nivel se ve correcto en el editor, pero en la página publicada
-   not: Contacta con la administración del estudio — luego el
-   CSS personalizado con la extensión Typo.
+2. Si falta la sección "Alineación vertical" en la pestaña **Layout**: Aun así
+   La extensión no está activada. Luego haz clic en
+   Otra vez y reabre el diálogo. 
+3. ¿El paso o la orientación en el editor se ve correcta en el
+   página publicada: Por favor, contacte con el
+   Administración del estudio — entonces falta el CSS personalizado actual.

@@ -36,21 +36,43 @@ Studio ne charge l’extension qu’une fois qu’un bloc personnalisé n’est 
    **Afficher L**, **H1** ou **Corps M**. 
 3. Cliquez **Enregistrer**. 
 
+## Aligner verticalement le contenu de la colonne
+
+1. Cliquez sur le conteneur puis cliquez sur
+   **Conteneur d’édition** (icône crayon). 
+2. Dans l’onglet **Layout**, sous les boutons de mise en page, vous trouverez le
+   **« Orientation verticale »**. Sélectionnez **haut**, **milieu** ou **bas** — 
+   Cela s’applique à toutes les colonnes du conteneur. 
+3. Si vous voulez qu’une colonne diffère : Dans sa ligne (**colonne 1**), 
+   **colonne 2** ...) l’orientation souhaitée. **en tant que conteneur** prend le relais
+   le réglage du conteneur à nouveau. Déplacez la souris sur un
+   ligne, la colonne est délimitée en bleu dans l’éditeur. 
+4. L’éditeur affichera immédiatement l’alignement. Avec **Ctrl+Z** (Mac : **⌘+Z**)
+   Annuler un changement. 
+5. Cliquez sur **Enregistrer**. 
+
+L’alignement n’est visible que si les colonnes contiennent des quantités de contenu différentes
+— la colonne la plus courte descend alors ou se déplace vers le centre. 
+
 ## Règles pour les éditeurs
 
 1. Modifier les pages avec des niveaux supplémentaires uniquement avec une extension active. Aucune
    On ne voit pas le niveau dans l’éditeur, mais ça fonctionne pour les lecteurs
    continue. 
-2. Réinitialisez le niveau après **Duplique** ou Copie : La Copie
-   Il ne fait pas de marche. 
-3. N’attribuez pas de niveau supplémentaire aux blocs auxquels un lien de saut (ancre) est disponible
-   — le régler change l’identifiant du bloc, le lien n’irait nulle part. 
+2. Réinitialisez le niveau et l’orientation après **Dupliquer** ou Copie : 
+   Elle ne remarque pas la copie. 
+3. N’attribuez pas de niveau ou d’alignement supplémentaire aux blocs qui possèdent un
+   Le lien de saut (ancre) montre — le réglage modifie l’identifiant du bloc qui est
+   Link n’irait nulle part. 
 4. Utiliser un titre par page et diviser en dessous de H2 à H4. 
 
 ## Quand quelque chose ne marche pas
 
 1. Si le groupe « MAN Typo Scale » manque : Changer l’extension comme ci-dessus
    . Après avoir rechargé l’onglet du navigateur, cela redevient nécessaire. 
-2. Le niveau semble-t-il correct dans l’éditeur, mais sur la page publiée
-   not : Contactez l’administration du studio — alors le
-   CSS personnalisé avec l’extension Typo.
+2. Si la section « Alignement vertical » manque dans l’onglet **Layout** : même dans ce cas
+   L’extension n’est pas activée. Puis cliquez sur le
+   Encore et rouvre le dialogue. 
+3. L’étape ou l’orientation dans l’éditeur a-t-elle l’air correcte sur le
+   page publiée : Veuillez contacter le
+   Administration du studio — alors le CSS personnalisé actuel manque.

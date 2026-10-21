@@ -26,14 +26,26 @@ La structure de la page reste inchangée : un titre est toujours le
 Titre principal de la page, H2 à H4, sont les sous-titres, niveaux de corps
 sont des talons. Les niveaux d’affichage ne changent que la taille. 
 
+## Alignement vertical dans les colonnes de conteneurs
+
+S’il y a des colonnes de longueurs différentes côte à côte dans un **conteneur**, 
+Le contenu de chaque colonne commence en haut. Avec l’extension, vous spécifiez 
+qu’il soit **au-dessus**, au **milieu** ou **en dessous** — pour tout le contenant
+et, si nécessaire, différemment selon les colonnes individuelles. Le réglage se trouve dans le
+Dialogue **Modifier le conteneur** dans l’onglet **Mise en page**. 
+
+Sur les smartphones, les colonnes sont les unes en dessous des autres et ne sont plus hautes que vous
+Contenu. Aucun alignement n’est nécessaire à cet endroit et aucun ne peut être visible. 
+
 ## Ce que voient les lecteurs
 
-Le titre ou le paragraphe dans la taille sélectionnée. Pour que cela fonctionne, il faut
-Les choses de Studio deux doivent être configurées pour que l’administrateur Studio puisse s’occuper.
+Le titre ou paragraphe dans la taille sélectionnée et le contenu de la colonne dans le
+orientation choisie. Pour que cela fonctionne, deux choses doivent être faites en Studio.
+mise en place autour de laquelle l’administration du studio
 le CSS personnalisé avec l’extension Typo (Content Designer → Custom CSS)
 et la typographie du thème (look & feel → typographie). Si le CSS personnalisé manque, 
-Les lecteurs voient la taille normale des niveaux supplémentaires — le contenu lui-même
-Reste correct. 
+Les lecteurs voient la taille normale et le contenu des colonnes pour les niveaux supplémentaires
+Top — Le contenu lui-même reste correct. 
 
 ## Ce que vous voyez dans l’éditeur CMS
 
@@ -43,6 +55,9 @@ Reste correct.
 - La boîte de sélection affiche le niveau actif, par exemple « Afficher 2XL · 72“. 
 - Les blocs avec un pas supplémentaire ont une étiquette sombre dans le coin supérieur droit
   Niveau, par exemple « display-2xl » — pour que vous puissiez les reconnaître d’un coup d’œil. 
+- Dans le dialogue **Modifier le conteneur, → la disposition** est listée sous le
+  Boutons de disposition de la section « Alignement vertical ». Les colonnes
+  Dans l’éditeur, affichez immédiatement l’orientation sélectionnée. 
 
 ## Quand l’extension sera prête
 

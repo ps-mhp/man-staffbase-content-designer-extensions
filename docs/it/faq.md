@@ -12,7 +12,7 @@ Cambiato — Per favore, segnala questo al team che mantiene i widget.
 
 Risposta: No. Non ha contenuto visibile e quindi non appare in
 nella lista Seleziona blocchi. Funziona solo nel campo selezione Formato di Titolo e
-Messaggio. 
+Testo e nel dialogo "Modifica contenitore". 
 
 **Domanda:** Vedo il livello nell'editor, ma non nella pagina pubblicata. 
 
@@ -38,6 +38,27 @@ Resetta il livello sulla copia.
 
 Risposta: Intenzionale: I livelli corporei si applicano solo ai paragrafi. Rimossa l'estensione
 Il livello che non corrisponde più alla prossima volta che salvi. 
+
+**Domanda:** Nel dialogo "Modifica contenitore", manca la sezione "Allineamento verticale". 
+
+Risposta: L'estensione non è ancora attiva nella scheda del browser. Toggle
+Puoi attivarlo come descritto in "Attiva → estensione passo dopo passo". 
+e riapri la dialogo. La sezione è disponibile solo nella scheda
+**Layout**. 
+
+**Domanda:** Perché non vedo il targeting nella pagina pubblicata? 
+
+Risposta: Prima di tutto, verifica se le colonne contengono quantità diverse di contenuto — 
+Se sono della stessa lunghezza, non c'è nulla da fare. Stare in piedi sullo smartphone
+le colonne tra loro; lì l'allineamento deliberatamente non funziona. Se manca,
+anche sul desktop, il CSS personalizzato in Studio è deprecato. Questo
+Amministrazione dello studio. 
+
+**Domanda:** Cosa significa "like container" per una colonna? 
+
+Risposta: La colonna eredita l'orientamento superiore per l'intero contenitore
+è selezionato. Se selezioni superiore, centrale o inferiore, il
+Atteggiamento personale. 
 
 **Domanda:** Come posso disattivare l'estensione di debug nel mio browser? 
 

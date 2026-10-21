@@ -12,7 +12,7 @@ Modificado — Por favor, informa esto al equipo que mantiene los widgets.
 
 Respuesta: No. No tiene contenido visible y, por tanto, no aparece en
 en la lista de Seleccionar bloques. Solo funciona en el campo de selección de Formato de Título y
-Mensaje. 
+Texto y en el cuadro de diálogo "Editar contenedor". 
 
 **Pregunta:** Veo el nivel en el editor, pero no en la página publicada. 
 
@@ -38,6 +38,27 @@ Reinicia el nivel de la copia.
 
 Respuesta: Intencionado: Los niveles del cuerpo solo se aplican a los párrafos. Se eliminó la extensión
 El nivel que ya no coincide con la próxima vez que guardes. 
+
+**Pregunta:** En el cuadro de diálogo "Editar contenedor", falta la sección "Alineación vertical". 
+
+Respuesta: La extensión aún no está activa en la pestaña de tu navegador. Alternar
+Puedes activarlo como se describe en "Activar → extensión paso a paso" 
+y abrir el diálogo de nuevo. La sección solo está disponible en la pestaña
+**Diseño**. 
+
+**Pregunta:** ¿Por qué no veo la segmentación en la página publicada? 
+
+Respuesta: Primero, comprueba si las columnas tienen diferentes cantidades de contenido — 
+Si tienen la misma longitud, no hay nada que hacer. De pie sobre el smartphone
+las columnas entre sí; allí la alineación deliberadamente no funciona. Si falta,
+incluso en el escritorio, el CSS personalizado en Studio está obsoleto. Esto
+Administración de estudio. 
+
+**Pregunta:** ¿Qué significa "como contenedor" para una columna? 
+
+Respuesta: La columna hereda la orientación que está arriba para todo el contenedor
+está seleccionada. Si seleccionas arriba, centro o abajo, el
+actitud propia. 
 
 **Pregunta:** ¿Cómo desactivo la extensión de depuración en mi navegador? 
 

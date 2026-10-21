@@ -12,7 +12,7 @@ Modifié — Veuillez signaler cela à l’équipe qui gère les widgets.
 
 Réponse : Non. Il n’a pas de contenu visible et n’apparaît donc pas dans
 dans la liste Sélection de blocs. Cela ne fonctionne que dans le champ de sélection de format de Titre et
-Texto. 
+Texte et dans la boîte de dialogue « Modifier le conteneur ». 
 
 **Question :** Je vois le niveau dans l’éditeur, mais pas sur la page publiée. 
 
@@ -38,6 +38,27 @@ Réinitialisez le niveau sur la copie.
 
 Réponse : Intentionnel : Les niveaux corporels ne s’appliquent qu’aux paragraphes. Suppression de l’extension
 Le niveau qui ne correspond plus à la prochaine sauvegarde. 
+
+**Question :** Dans la boîte « Modifier le conteneur », la section « Alignement vertical » manque. 
+
+Réponse : L’extension n’est pas encore active dans l’onglet de votre navigateur. Basculer
+Vous pouvez l’activer comme décrit dans « Activez → extension étape par étape » 
+et ouvre à nouveau le dialogue. La section n’est disponible que dans l’onglet
+**Mise en page**. 
+
+**Question :** Pourquoi je ne vois pas le ciblage sur la page publiée ? 
+
+Réponse : D’abord, vérifiez si les colonnes contiennent des quantités de contenu différentes — 
+S’ils ont la même longueur, il n’y a rien à faire. Debout sur le smartphone
+les colonnes entre elles ; là l’alignement ne fonctionne délibérément pas. S’il manque,
+même sur ordinateur, le CSS personnalisé dans Studio est obsolète. Cela
+Administration du studio. 
+
+**Question :** Que signifie « comme contenant » pour une chronique ? 
+
+Réponse : La colonne hérite de l’orientation qui est au-dessus pour l’ensemble du conteneur
+est sélectionné. Si vous sélectionnez haut, centre ou bas, le
+Son propre attitude. 
 
 **Question :** Comment désactiver l’extension de débogage dans mon navigateur ? 
 

@@ -26,14 +26,26 @@ De structuur van de pagina blijft ongewijzigd: een titel is altijd de
 De hoofdkop van de pagina, H2 tot H4, zijn subkoppen, lichaamsniveaus,
 zijn hakken. De displayniveaus veranderen alleen de grootte. 
 
+## Verticale uitlijning in containerkolommen
+
+Als er kolommen van verschillende lengtes naast elkaar staan in een **container**, 
+De inhoud van elke kolom begint bovenaan. Met de extensie specificeer je 
+of het nu **boven** is, in het **midden** of **onder** — voor de hele container
+en, indien nodig, anders voor individuele kolommen. De setting is te vinden in de
+Dialoog **Container bewerken** in het **Layout**-tabblad. 
+
+Op smartphones liggen de kolommen onder elkaar en zijn ze slechts zo hoog als jij
+Inhoud. Daar is geen uitstemming nodig en er is geen te zien. 
+
 ## Wat lezers zien
 
-De titel of alinea in de geselecteerde grootte. Om dit te laten werken, moet je dat doen
-Studio twee dingen moeten worden ingesteld die de studio-admin kan regelen.
+De titel of alinea in de geselecteerde grootte en de kolominhoud in de
+gekozen oriëntatie. Om dit te laten werken, moeten er twee dingen in Studio gebeuren.
+rondom welke de studioadministratie werd opgezet
 de aangepaste CSS met de Typo-extensie (Content Designer → Custom CSS)
 en de thematypografie (look & feel → typografie). Als de aangepaste CSS ontbreekt, 
-Lezers zien de normale grootte voor de extra levels — de inhoud zelf
-blijft correct. 
+Lezers zien de normale grootte en kolominhoud voor de extra niveaus
+TOP — de inhoud zelf blijft correct. 
 
 ## Wat je ziet in de CMS-editor
 
@@ -43,6 +55,9 @@ blijft correct.
 - Het selectievakje toont het actieve niveau, bijvoorbeeld "Display 2XL · 72“. 
 - Blokken met een extra stap hebben een donker label in de rechterbovenhoek
   Level, bijvoorbeeld 'display-2xl' — zodat je ze in één oogopslag kunt herkennen. 
+- In het dialoogvenster **Container bewerken → lay-out** wordt vermeld onder de
+  Layoutknoppen van de sectie "Verticale uitlijning". De kolommen
+  toon in de editor direct de geselecteerde oriëntatie. 
 
 ## Wanneer de uitbreiding klaar is
 

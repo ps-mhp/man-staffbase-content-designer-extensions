@@ -12,7 +12,7 @@ Gewijzigd — meld dit alsjeblieft aan het team dat de widgets onderhoudt.
 
 Antwoord: Nee. Het heeft geen zichtbare inhoud en verschijnt daarom niet in
 in de lijst Blokken selecteren. Het werkt alleen in het veld Formaatselectie van Titel en
-Tekst. 
+Tekst en in het "Container bewerken"-dialoog. 
 
 **Vraag:** Ik zie het level in de editor, maar niet op de gepubliceerde pagina. 
 
@@ -38,6 +38,27 @@ Reset het level op de kopie.
 
 Antwoord: Opzettelijk: Hoofdniveaus gelden alleen voor alinea's. De uitbreiding verwijderd
 Het level dat de volgende keer dat je opslaat niet meer overeenkomt. 
+
+**Vraag:** In het dialoogvenster "Container bewerken" ontbreekt het gedeelte "Verticale uitlijning". 
+
+Antwoord: De extensie is nog niet actief in je browsertabblad. Wisselen
+Je kunt hem aanzetten zoals beschreven in "Zet → verlengstuk stap voor stap aan". 
+en open het dialoogvenster opnieuw. De sectie is alleen beschikbaar in het tabblad
+**Lay-out**. 
+
+**Vraag:** Waarom zie ik de targeting niet op de gepubliceerde pagina? 
+
+Antwoord: Controleer eerst of de kolommen verschillende hoeveelheden inhoud bevatten — 
+Als ze even lang zijn, is er niets te doen. Op de smartphone staan
+de kolommen onderling; daar werkt de uitlijning bewust niet. Als deze ontbreekt,
+zelfs op het bureaublad is de aangepaste CSS in Studio verouderd. Dit
+Studioadministratie. 
+
+**Vraag:** Wat betekent "like container" voor een kolom? 
+
+Antwoord: De kolom erft de oriëntatie die hierboven is voor de hele container
+is geselecteerd. Als je boven, midden of onderkant selecteert, de
+Eigen houding. 
 
 **Vraag:** Hoe schakel ik de debugging-extensie in mijn browser uit? 
 

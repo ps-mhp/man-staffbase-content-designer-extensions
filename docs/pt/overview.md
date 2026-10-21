@@ -26,14 +26,26 @@ A estrutura da página permanece inalterada: um título é sempre o
 O título principal da página, H2 a H4, são subtítulos, níveis do corpo
 são saltos altos. Os níveis de exibição só mudam o tamanho. 
 
+## Alinhamento vertical em colunas de contêiner
+
+Se houver colunas de comprimentos diferentes lado a lado em um **container**, 
+O conteúdo de cada coluna começa no topo. Com a extensão, você especifica 
+seja **acima**, no **meio** ou **abaixo** — para todo o recipiente
+e, se necessário, de forma diferente para colunas individuais. A configuração pode ser encontrada na
+Diálogo **Editar Container** na aba **Layout**. 
+
+Nos smartphones, as colunas ficam abaixo uma da outra e só chegam até a altura de você
+Conteúdo. Não é necessário alinhamento ali e nenhum pode ser visto. 
+
 ## O que os leitores veem
 
-O título ou parágrafo no tamanho selecionado. Para que isso funcione, você precisa
-As coisas do Studio Two precisam ser configuradas para que o administrador do Studio possa cuidar.
+O título ou parágrafo no tamanho selecionado e o conteúdo da coluna no
+orientação escolhida. Para que isso funcione, duas coisas precisam ser feitas no Studio.
+em torno do qual a administração do estúdio
 o CSS Personalizado com a extensão Typo (Content Designer → Custom CSS)
 e a tipografia do tema (aparência e sensação → tipografia). Se o CSS personalizado estiver faltando, 
-Os leitores veem o tamanho normal dos níveis adicionais — o próprio conteúdo
-permanece correto. 
+Leitores veem o tamanho normal e o conteúdo das colunas para os níveis adicionais
+Top — O conteúdo em si permanece correto. 
 
 ## O que você vê no editor CMS
 
@@ -43,6 +55,9 @@ permanece correto.
 - A caixa de seleção mostra o nível ativo, por exemplo, "Display 2XL · 72“. 
 - Blocos com um passo adicional possuem um rótulo escuro no canto superior direito
   Nivele, por exemplo, 'display-2XL' — assim você pode reconhecê-los num instante. 
+- No diálogo, **Editar o layout → contêiner** está listado sob o
+  Botões de layout da seção "Alinhamento Vertical". As Colunas
+  No editor, mostre imediatamente a orientação selecionada. 
 
 ## Quando a expansão estiver pronta
 

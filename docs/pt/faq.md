@@ -12,7 +12,7 @@ Alterado — Por favor, informe isso à equipe que mantém os widgets.
 
 Resposta: Não. Não tem conteúdo visível e, portanto, não aparece em
 na lista de Selecionar Blocos. Funciona apenas no campo de seleção de Formato de Título e
-Mensagem. 
+Texto e no diálogo "Editar Contêiner". 
 
 **Pergunta:** Vejo o nível no editor, mas não na página publicada. 
 
@@ -38,6 +38,27 @@ Resetar o nível da cópia.
 
 Resposta: Intencional: Níveis corporais se aplicam apenas aos parágrafos. Removido a extensão
 O nível que não combina mais com a próxima vez que você salvar. 
+
+**Pergunta:** No diálogo "Editar Contêiner", a seção "Alinhamento Vertical" está ausente. 
+
+Resposta: A extensão ainda não está ativa na aba do seu navegador. Alternar
+Você pode ativar como descrito em "Ativar → extensão passo a passo" 
+e abra o diálogo novamente. A seção só está disponível na aba
+**Disposição**. 
+
+**Pergunta:** Por que não vejo o direcionamento na página publicada? 
+
+Resposta: Primeiro, verifique se as colunas têm quantidades diferentes de conteúdo — 
+Se tiverem o mesmo comprimento, não há o que fazer. Ficar em pé no smartphone
+as colunas entre si; ali o alinhamento deliberadamente não funciona. Se estiver faltando,
+mesmo na área de trabalho, o CSS personalizado no Studio está obsoleto. Isso
+Administração do Estúdio. 
+
+**Pergunta:** O que significa "como recipiente" para uma coluna? 
+
+Resposta: A coluna herda a orientação acima para todo o contêiner
+está selecionada. Se você selecionar top, meio ou bottom, o
+A própria atitude. 
 
 **Pergunta:** Como faço para desligar a extensão de depuração no meu navegador? 
 

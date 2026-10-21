@@ -26,14 +26,26 @@ Struktura strony pozostaje niezmieniona: tytuł zawsze jest
 Główny nagłówek strony, od H2 do H4, to podtytuły, poziomy ciała
 to obcasy. Poziomy wyświetlacza zmieniają tylko rozmiar. 
 
+## Pionowe wyrównanie w kolumnach kontenerów
+
+Jeśli w **kontenerze** znajdują się kolumny o różnych długościach obok siebie, 
+treść każdej kolumny zaczyna się od góry. Przy rozszerzeniu określasz 
+czy jest **powyżej**, w **środku** czy **poniżej** — dla całego pojemnika
+a jeśli to konieczne, różnie dla poszczególnych kolumn. Miejsce to można znaleźć w
+Dialog **Edytuj kontener** w zakładce **Układ**. 
+
+W smartfonach kolumny są ustawione jedna nad drugą i są tylko tak wysoko, jak ty
+Content. Tam nie jest potrzebna żadna zgodność i nie widać żadnej. 
+
 ## Co widzą czytelnicy
 
-Tytuł lub akapit w wybranym rozmiarze. Aby to zadziałało, musisz
-Studio Two musi być skonfigurowane i administratorzy Studia będą mogli się nimi zająć.
+Tytuł lub akapit w wybranym rozmiarze oraz zawartość kolumn w
+wybrana orientacja. Aby to zadziałało, w Studio trzeba zrobić dwie rzeczy.
+wokół której administracja studia
 Custom CSS z rozszerzeniem Typo (Content Designer → Custom CSS)
 oraz typografię tematyczną (wygląd i odczucie → typografii). Jeśli brakuje niestandardowego CSS, 
-Czytelnicy widzą normalny rozmiar dodatkowych poziomów — samą treść
-pozostaje poprawne. 
+Czytelnicy widzą normalny rozmiar i zawartość kolumn dodatkowych poziomów
+TOP — Sama treść pozostaje poprawna. 
 
 ## Co widzisz w edytorze CMS
 
@@ -43,6 +55,9 @@ pozostaje poprawne.
 - Pole wyboru pokazuje aktywny poziom, np. "Display 2XL · 72“. 
 - Bloki z dodatkowym krokiem mają ciemną etykietę w prawym górnym rogu
   np. 'display-2XL' — więc rozpoznać je od razu. 
+- W dialogu **Edytuj kontener → układ** jest wymieniony pod
+  Przyciski układu w sekcji "Pionowe wyrównanie". Kolumny
+  W edytorze natychmiast pokaż wybraną orientację. 
 
 ## Gdy rozbudowa będzie gotowa
 

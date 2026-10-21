@@ -26,14 +26,26 @@ The structure of the page remains unchanged: a title is always the
 Main heading of the page, H2 to H4 are subheadings, body levels
 are heels. The display levels only change the size. 
 
+## Vertical alignment in container columns
+
+If there are columns of different lengths next to each other in a **container**, 
+the content of each column starts at the top. With the extension, you specify 
+whether it is **above**, in the **middle** or **below** — for the whole container
+and, if necessary, differently for individual columns. The setting can be found in the
+Dialog **Edit Container** in the **Layout** tab. 
+
+On smartphones, the columns are below each other and are only as high as you
+Content. No alignment is necessary there and none can be seen. 
+
 ## What readers see
 
-The title or paragraph in the selected size. In order for this to work, you have to
-Studio two things need to be set up that Studio admin can take care of.
+The title or paragraph in the selected size and the column contents in the
+chosen orientation. In order for this to work, two things have to be done in Studio.
+set up around which the Studio administration
 the Custom CSS with the Typo extension (Content Designer → Custom CSS)
 and the theme typography (look & feel → typography). If the custom CSS is missing, 
-Readers see the normal size for the additional levels — the content itself
-remains correct. 
+Readers see the normal size and column contents for the additional levels
+top — the content itself remains correct. 
 
 ## What you see in the CMS editor
 
@@ -43,6 +55,9 @@ remains correct.
 - The selection box shows the active level, e.g. "Display 2XL · 72“. 
 - Blocks with an additional step have a dark label in the upper right corner
   level, e.g. 'display-2xl' — so you can recognize them at a glance. 
+- In the dialog **Edit container → layout** is listed under the
+  Layout buttons of the "Vertical Alignment" section. The Columns
+  in the editor show the selected orientation immediately. 
 
 ## When the expansion is ready
 

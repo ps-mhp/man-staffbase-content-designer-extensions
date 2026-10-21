@@ -1,6 +1,6 @@
 {
   "title": "Extensiones para diseñadores de contenido",
-  "summary": "En el Diseñador de Contenido, el campo de selección de formato del título y el texto se complementa con la escala de errores tipográficos MAN con 13 niveles — sin un módulo propio en la página.",
+  "summary": "En el Content Designer, complementa el campo de selección de formato del título y el texto con la escala de errores tipográficos MAN con 13 niveles y el contenedor con la alineación vertical de sus columnas — sin un módulo propio en la página.",
   "icon": "🔠",
   "pages": [
     {

@@ -12,7 +12,7 @@ Zmieniono — prosimy o zgłoszenie tego zespołowi zajmującemu się utrzymanie
 
 Odpowiedź: Nie. Nie ma widocznej treści, dlatego nie pojawia się w
 w liście Wybierz bloki. Działa tylko w polu wyboru formatu w Title oraz
-SMS. 
+Tekst oraz w oknie "Edytuj kontener". 
 
 **Pytanie:** Widzę poziom w edytorze, ale nie na opublikowanej stronie. 
 
@@ -38,6 +38,27 @@ Zresetuj poziom na kopii.
 
 Odpowiedź: Celowe: Poziomy ciała dotyczą tylko akapitów. Usunięto rozszerzenie
 poziom, który już nie pasuje przy następnym zapisie. 
+
+**Pytanie:** W oknie "Edytuj kontener" brakuje sekcji "Pionowe wyrównanie". 
+
+Odpowiedź: Rozszerzenie nie jest jeszcze aktywne w karcie przeglądarki. Przełącznik
+Możesz go włączyć zgodnie z opisem w "Włącz → rozszerzenie krok po kroku" 
+i ponownie otwórz dialog. Sekcja jest dostępna tylko w zakładce
+**Układ**. 
+
+**Pytanie:** Dlaczego nie widzę targetowania na opublikowanej stronie? 
+
+Odpowiedź: Po pierwsze, sprawdź, czy kolumny mają różną ilość treści — 
+Jeśli mają tę samą długość, nie ma co robić. Stanie na smartfonie
+kolumny między sobą; tam wyrównanie celowo nie działa. Jeśli brakuje,
+nawet na komputerze niestandardowe CSS w Studio jest przestarzałe. To
+Administracja studia. 
+
+**Pytanie:** Co oznacza "like container" dla kolumny? 
+
+Odpowiedź: Kolumna dziedziczy orientację powyżej dla całego pojemnika
+jest wybrany. Jeśli wybierzesz górę, środek lub dol, to
+własne nastawienie. 
 
 **Pytanie:** Jak wyłączyć rozszerzenie debugujące w mojej przeglądarce? 
 
