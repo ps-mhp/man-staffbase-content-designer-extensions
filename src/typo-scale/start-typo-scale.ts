@@ -22,11 +22,11 @@
 import { guarded } from "../studio";
 import { applyEntry } from "./editor-access";
 import { LISTBOX_SELECTOR, augmentListbox } from "./dropdown";
-import { parseId, withToken } from "./id-codec";
+import { parseId, withToken } from "../id-codec";
 import { markNodeViews, studioCss, syncTriggerLabel } from "./preview";
-import { installSaveGuard, sanitizePayload } from "./save-guard";
+import { installSaveGuard, sanitizePayload } from "../save-guard";
 import { ALL_ENTRIES, SCALE } from "./scale";
-import { TiptapEditor, getEditor } from "./tiptap";
+import { TiptapEditor, getEditor } from "../tiptap";
 
 export const STYLE_ID = "sbt-typo-scale";
 

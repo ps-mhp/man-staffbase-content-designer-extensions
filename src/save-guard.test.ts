@@ -49,6 +49,27 @@ describe("sanitizePayload", () => {
     expect(result.meta).toEqual([1, "x"]);
   });
 
+  it("behält Ausrichtungs-Tokens nur an ihrem Node-Typ", () => {
+    const result = sanitizePayload({
+      blocks: {
+        "sbt-valign-center--c": { type: "container", children: ["sbt-col-valign-top--k", "sbt-valign-center--k2"] },
+        "sbt-col-valign-top--k": { type: "column" },
+        "sbt-valign-center--k2": { type: "column" },
+        "sbt-col-valign-top--c2": { type: "container", children: [] },
+      },
+      content: ["sbt-valign-center--c", "sbt-col-valign-top--c2"],
+    });
+
+    expect(Object.keys(result.blocks).sort()).toEqual([
+      "c2",
+      "k2",
+      "sbt-col-valign-top--k",
+      "sbt-valign-center--c",
+    ]);
+    expect(result.blocks["sbt-valign-center--c"].children).toEqual(["sbt-col-valign-top--k", "k2"]);
+    expect(result.content).toEqual(["sbt-valign-center--c", "c2"]);
+  });
+
   it("gibt einen sauberen Inhalt als dasselbe Objekt zurück", () => {
     const clean = { blocks: { a: { type: "paragraph" } }, content: ["a"] };
     expect(sanitizePayload(clean)).toBe(clean);

@@ -16,7 +16,7 @@
  * Blöcken, je Block eine Position. Nur Tests importieren diese Datei.
  */
 
-import { PmNode, TiptapEditor } from "./tiptap";
+import { PmNode, TiptapEditor } from "../tiptap";
 
 export interface FakeBlock {
   type: string;
@@ -30,7 +30,12 @@ export interface FakeEditor extends TiptapEditor {
   readonly dispatch: jest.Mock;
 }
 
-const toNode = (block: FakeBlock): PmNode => ({ type: { name: block.type }, attrs: { ...block.attrs } });
+const toNode = (block: FakeBlock): PmNode => ({
+  type: { name: block.type },
+  attrs: { ...block.attrs },
+  childCount: 0,
+  forEach: () => undefined,
+});
 
 /**
  * @param cursor Position des Blocks mit dem Cursor; mit `to` ein Bereich bis

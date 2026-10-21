@@ -11,9 +11,9 @@
  * limitations under the License.
  */
 
-import { parseId, withToken } from "./id-codec";
+import { parseId, withToken } from "../id-codec";
 import { SCALE, ScaleEntry, TOKENS, contextOf } from "./scale";
-import { PmNode, TiptapEditor } from "./tiptap";
+import { PmNode, TiptapEditor } from "../tiptap";
 
 export interface Target {
   readonly node: PmNode;

@@ -19,7 +19,7 @@
 
 import { entryForNode, findTarget, validToken } from "./editor-access";
 import { TOKENS, contextOf } from "./scale";
-import { TiptapEditor } from "./tiptap";
+import { TiptapEditor } from "../tiptap";
 
 export const TRIGGER_SELECTOR = "[data-contextual-toolbar] .ds-single-select__trigger";
 

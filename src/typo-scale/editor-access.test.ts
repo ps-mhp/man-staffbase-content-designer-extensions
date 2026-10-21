@@ -21,7 +21,12 @@ const entry = (key: string): ScaleEntry => {
   return found;
 };
 
-const node = (type: string, attrs: Record<string, unknown>) => ({ type: { name: type }, attrs });
+const node = (type: string, attrs: Record<string, unknown>) => ({
+  type: { name: type },
+  attrs,
+  childCount: 0,
+  forEach: () => undefined,
+});
 
 describe("validToken", () => {
   it("nimmt einen Token nur am passenden Node-Typ", () => {

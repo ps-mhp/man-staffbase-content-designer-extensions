@@ -12,8 +12,8 @@
  */
 
 /**
- * Der Ausschnitt der TipTap-/ProseMirror-Schnittstelle, den die Typo-Skala
- * benutzt.
+ * Der Ausschnitt der TipTap-/ProseMirror-Schnittstelle, den die Erweiterungen
+ * benutzen.
  *
  * Studio bringt TipTap selbst mit und hängt die Instanz als Property `editor`
  * an das contenteditable-Element. Eine eigene Abhängigkeit auf TipTap wäre
@@ -25,6 +25,9 @@
 export interface PmNode {
   readonly type: { readonly name: string };
   readonly attrs: Readonly<Record<string, unknown>>;
+  readonly childCount: number;
+  /** `offset` ist die Position des Kindes relativ zum Inhaltsbeginn. */
+  forEach(visit: (child: PmNode, offset: number, index: number) => void): void;
 }
 
 export interface PmResolvedPos {

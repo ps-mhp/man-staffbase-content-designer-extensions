@@ -21,7 +21,7 @@
 
 import { applyEntry, entryForNode, findTarget } from "./editor-access";
 import { SCALE, ScaleContext, ScaleEntry } from "./scale";
-import { TiptapEditor } from "./tiptap";
+import { TiptapEditor } from "../tiptap";
 
 export const LISTBOX_SELECTOR = '[role="listbox"].toolbar-single-select-dropdown';
 

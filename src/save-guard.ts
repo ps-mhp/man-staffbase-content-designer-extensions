@@ -16,13 +16,13 @@
  * Vorschau rendert.
  *
  * Hängt sich an den API-Client des Editors (`pages.drafts.saveContent`,
- * `pages.preview`) und entfernt Tokens, die die Skala nicht kennt oder die am
+ * `pages.preview`) und entfernt Tokens, die keine Erweiterung kennt oder die am
  * falschen Node-Typ hängen. Der Request bleibt sonst unverändert; fehlt der
  * Client, speichert Studio wie immer, nur ohne Bereinigung.
  */
 
 import { parseId } from "./id-codec";
-import { TOKENS } from "./scale";
+import { TOKEN_NODES } from "./tokens";
 import { TiptapEditor } from "./tiptap";
 
 interface StoredBlock {
@@ -45,8 +45,7 @@ function sanitizeContent(content: StoredContent): StoredContent {
   for (const [id, block] of Object.entries(content.blocks)) {
     const { token, baseId } = parseId(id);
     if (!token || !baseId) continue;
-    const entry = TOKENS.get(token);
-    if (!entry || entry.apply.node !== block?.type) renames.set(id, baseId);
+    if (TOKEN_NODES.get(token) !== block?.type) renames.set(id, baseId);
   }
   if (renames.size === 0) return content;
   const swap = (id: string): string => renames.get(id) ?? id;
