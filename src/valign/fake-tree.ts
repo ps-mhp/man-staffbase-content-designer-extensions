@@ -87,7 +87,8 @@ export function treeEditor(
   };
   const resolve = (pos: number): PmResolvedPos => {
     const chain: Built[] = [];
-    for (let node: Built | null = at(pos); node; node = node.parent) chain.unshift(node);
+    const start = all().find((node) => node.pos === pos) ?? null;
+    for (let node: Built | null = start; node; node = node.parent) chain.unshift(node);
     return { depth: chain.length, node: (depth) => toNode(chain[depth - 1]), before: (depth) => chain[depth - 1].pos };
   };
   const dispatch = jest.fn();
@@ -118,7 +119,7 @@ export function treeEditor(
           from: pos,
           to: pos,
           $from: resolve(pos),
-          node: isNode ? toNode(at(pos)) : undefined,
+          node: isNode && all().some((node) => node.pos === pos) ? toNode(at(pos)) : undefined,
         },
         doc: {
           nodesBetween: () => undefined,
