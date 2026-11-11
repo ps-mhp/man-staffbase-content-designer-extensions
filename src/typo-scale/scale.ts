@@ -22,6 +22,15 @@
  * - `apply.format` nur `title`: natives Format (big | medium | small)
  * - `apply.token`  Präfix der Block-ID. Fehlt er, ist die Stufe nativ
  *                  (Theme-Typografie).
+ * - `apply.native` Die Stufe, die ein Block dieses Formats **ohne** Token
+ *                  zeigt — nur bei Stufen, die trotzdem einen Token
+ *                  schreiben. Display L und S sind native Titelformate (big,
+ *                  medium), das Frontend sieht das Format aber nicht: man-theme
+ *                  setzt jeden Titel-Baustein mit Nachdruck auf H1 und kennt
+ *                  nur die Block-ID (live geprüft 11.11.2026 auf www.mti.man:
+ *                  big und medium beide 32px). Erst der Token macht sie dort
+ *                  gestaltbar; ältere Blöcke ohne Token erkennt der Editor
+ *                  weiter am Format.
  * - `lh`           Zeilenhöhe als **Faktor**, nicht in Pixeln: so, wie Craft
  *                  sie führt (`--craft-gl-font-line-height-2` = 1.3 für
  *                  Display und Überschriften, `-3` = 1.5 für Fliesstext).
@@ -49,6 +58,7 @@ export interface ScaleEntry {
     readonly node: string;
     readonly format?: "big" | "medium" | "small";
     readonly token?: string;
+    readonly native?: boolean;
   };
 }
 
@@ -56,9 +66,9 @@ export const SCALE: Readonly<Record<ScaleContext, readonly ScaleEntry[]>> = {
   title: [
     { key: "display-2xl", label: "Display 2XL", px: 72, lh: LH_HEAD, apply: { node: "title", format: "big", token: "display-2xl" } },
     { key: "display-xl", label: "Display XL", px: 64, lh: LH_HEAD, apply: { node: "title", format: "big", token: "display-xl" } },
-    { key: "display-l", label: "Display L", px: 56, lh: LH_HEAD, apply: { node: "title", format: "big" } },
+    { key: "display-l", label: "Display L", px: 56, lh: LH_HEAD, apply: { node: "title", format: "big", token: "display-l", native: true } },
     { key: "display-m", label: "Display M", px: 48, lh: LH_HEAD, apply: { node: "title", format: "medium", token: "display-m" } },
-    { key: "display-s", label: "Display S", px: 40, lh: LH_HEAD, apply: { node: "title", format: "medium" } },
+    { key: "display-s", label: "Display S", px: 40, lh: LH_HEAD, apply: { node: "title", format: "medium", token: "display-s", native: true } },
     { key: "h1", label: "H1", px: 32, lh: LH_HEAD, apply: { node: "title", format: "small" } },
   ],
   text: [

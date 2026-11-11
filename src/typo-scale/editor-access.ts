@@ -72,7 +72,7 @@ export function entryForNode(node: PmNode): ScaleEntry | null {
   return (
     SCALE[context].find(
       (entry) =>
-        !entry.apply.token &&
+        (!entry.apply.token || entry.apply.native === true) &&
         entry.apply.node === node.type.name &&
         (!entry.apply.format || entry.apply.format === format),
     ) ?? null

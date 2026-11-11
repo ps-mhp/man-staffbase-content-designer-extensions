@@ -45,6 +45,11 @@ describe("entryForNode", () => {
     expect(entryForNode(node("paragraph", { id: "a" }))?.key).toBe("body-m");
   });
 
+  it("erkennt Display L und S auch mit ihrem Token", () => {
+    expect(entryForNode(node("title", { id: "sbt-display-s--a", format: "medium" }))?.key).toBe("display-s");
+    expect(entryForNode(node("title", { id: "sbt-display-l--a", format: "big" }))?.key).toBe("display-l");
+  });
+
   it("liest einen Title ohne Format als „big“, wie Studio", () => {
     expect(entryForNode(node("title", { id: "a" }))?.key).toBe("display-l");
   });
@@ -72,9 +77,22 @@ describe("applyEntry", () => {
   it("entfernt den Token bei einer nativen Stufe", () => {
     const editor = fakeEditor([{ type: "title", attrs: { id: "sbt-display-m--t1", format: "medium" }, pos: 0 }], 0);
 
-    applyEntry(editor, entry("display-s"));
+    applyEntry(editor, entry("h1"));
 
-    expect(editor.blocks[0].attrs).toEqual({ id: "t1", format: "medium" });
+    expect(editor.blocks[0].attrs).toEqual({ id: "t1", format: "small" });
+  });
+
+  // Das Frontend-Theme setzt jeden Titel-Baustein mit Nachdruck auf H1 und
+  // unterscheidet die nativen Formate nicht — nur ein Token macht die Stufe
+  // dort sichtbar (live geprüft auf www.mti.man: big und medium beide 32px).
+  it("schreibt für Display S und Display L einen Token, damit das Frontend sie gestalten kann", () => {
+    const editor = fakeEditor([{ type: "title", attrs: { id: "t1", format: "small" }, pos: 0 }], 0);
+
+    applyEntry(editor, entry("display-s"));
+    expect(editor.blocks[0].attrs).toEqual({ id: "sbt-display-s--t1", format: "medium" });
+
+    applyEntry(editor, entry("display-l"));
+    expect(editor.blocks[0].attrs).toEqual({ id: "sbt-display-l--t1", format: "big" });
   });
 
   it("wechselt den Blocktyp nativ, bevor es den Token setzt", () => {
