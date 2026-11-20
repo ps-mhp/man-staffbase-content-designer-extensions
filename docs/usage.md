@@ -33,7 +33,7 @@ wird. Einmal pro Browser-Tab genügt.
 
 1. Setzen Sie den Cursor in den Block.
 2. Wählen Sie im Format-Auswahlfeld eine Stufe ohne Etikett, etwa
-   **Display L**, **H1** oder **Body M**.
+   **H1**, **H2** oder **Body M**.
 3. Klicken Sie auf **Speichern**.
 
 ## Spalteninhalte vertikal ausrichten

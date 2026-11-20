@@ -1,10 +1,10 @@
 # Content Designer Extensions
 
-This extension complements the format selection box in Studio's Content Designer
-of the elements **Title** and **Text** around the **MAN Typo Scale** with 13 levels — 
-from "Display 2XL · 72" to "Body XS · 12“. You are not adding a building block
-of the page: You can select the level directly from the title or text paragraph, as well as
-previously "Heading 2" or "Paragraph". 
+This extension adds the **MAN Typo Scale**—with 13 levels—to the format selection field
+for the **Title** and **Text** elements in Studio’s Content Designer—
+ranging from “Display 2XL · 72” to “Body XS · 12.” This does not insert a module onto
+the page: You select the size directly on the title or text paragraph, just as
+you previously selected “Heading 2” or “Paragraph.”
 
 | Level | Size | Element |
 | --- | --- | --- |
@@ -22,46 +22,46 @@ previously "Heading 2" or "Paragraph".
 | Body S | 14 px | Text |
 | Body XS | 12 px | Text |
 
-The structure of the page remains unchanged: a title is always the
-Main heading of the page, H2 to H4 are subheadings, body levels
-are heels. The display levels only change the size. 
+The page structure remains unchanged: A title is always the
+main heading of the page, H2 through H4 are subheadings, and body levels
+are paragraphs. The display levels only change the size.
 
-## Vertical alignment in container columns
+## Vertical Alignment in Container Columns
 
-If there are columns of different lengths next to each other in a **container**, 
-the content of each column starts at the top. With the extension, you specify 
-whether it is **above**, in the **middle** or **below** — for the whole container
-and, if necessary, differently for individual columns. The setting can be found in the
-Dialog **Edit Container** in the **Layout** tab. 
+If columns of different lengths are placed side by side in a **container**,
+the content of each column previously started at the top. With this extension, you can specify
+whether the content is aligned **top**, **center**, or **bottom**—for the entire container
+and, if necessary, differently for individual columns. You’ll find this setting in the
+**Edit Container** dialog under the **Layout** tab.
 
-On smartphones, the columns are below each other and are only as high as you
-Content. No alignment is necessary there and none can be seen. 
+On smartphones, the columns appear one below the other and are only as tall as their
+content. No alignment is needed there, and none is visible.
 
-## What readers see
+## What Readers See
 
-The title or paragraph in the selected size and the column contents in the
-chosen orientation. In order for this to work, two things have to be done in Studio.
-set up around which the Studio administration
-the Custom CSS with the Typo extension (Content Designer → Custom CSS)
-and the theme typography (look & feel → typography). If the custom CSS is missing, 
-Readers see the normal size and column contents for the additional levels
-top — the content itself remains correct. 
+The title or paragraph in the selected size and the column content in the
+selected alignment. For this to work, two things must be
+configured in Studio, which the Studio administration
+handles: the Custom CSS with the Typo extension (Content Designer → Custom CSS)
+and the theme typography (Look & Feel → Typography). If the Custom CSS is missing,
+readers will see the normal size for the additional levels and the column content
+at the top—the content itself remains correct.
 
-## What you see in the CMS editor
+## What You See in the CMS Editor
 
-- In the format selection field of the toolbar, the group **"MAN Typo-Scale"** appears 
-  with size and line height per step, e.g. "Body L 18/27". The previous
-  Entries are hidden because the scale contains them completely. 
-- The selection box shows the active level, e.g. "Display 2XL · 72“. 
-- Blocks with an additional step have a dark label in the upper right corner
-  level, e.g. 'display-2xl' — so you can recognize them at a glance. 
-- In the dialog **Edit container → layout** is listed under the
-  Layout buttons of the "Vertical Alignment" section. The Columns
-  in the editor show the selected orientation immediately. 
+- The **“MAN Typo Scale”** group appears in the format selection field of the toolbar
+  with size and line height for each level, e.g., “Body L 18/27.” The previous
+  entries are hidden because the scale fully encompasses them.
+- The drop-down menu shows the active level, e.g., “Display 2XL · 72.”
+- Blocks with an additional level have a dark label in the upper-right corner indicating
+  their level, e.g., `display-2xl`—so you can recognize them at a glance.
+- In the **Edit Container → Layout** dialog, below the
+  layout buttons, you’ll find the **“Vertical Alignment”** section. The columns
+  in the editor immediately reflect the selected alignment.
 
-## When the expansion is ready
+## When the extension is available
 
-Studio doesn't load the extension when you open a page, but only when you 
-the first time you insert a **Custom Block**, or
-. After that, it will be available on all pages until you open the Browser tab
-reload. How to turn it on specifically can be found under "Step by step".
+Studio does not load the extension when you open a page, but only
+when you insert or
+edit a **Custom Block** for the first time. After that, it’s available on all pages until you
+reload the browser tab. See “Step by Step” for instructions on how to enable it manually.

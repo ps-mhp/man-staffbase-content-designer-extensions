@@ -1,6 +1,6 @@
 {
-  "title": "Extensions de concepteur de contenu",
-  "summary": "Dans le Content Designer, il complète le champ de sélection de format du titre et du texte avec l’échelle de faute MAN avec 13 niveaux et le conteneur avec l’alignement vertical de ses colonnes — sans son propre module sur la page.",
+  "title": "Extensions pour Content Designer",
+  "summary": "Dans le Content Designer, ajoutez à la liste de sélection des formats pour les titres et le texte la gamme typographique MAN à 13 niveaux, et au conteneur l'alignement vertical de ses colonnes — sans module dédié sur la page.",
   "icon": "🔠",
   "pages": [
     {

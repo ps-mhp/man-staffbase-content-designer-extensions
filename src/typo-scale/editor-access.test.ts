@@ -37,21 +37,26 @@ describe("validToken", () => {
 });
 
 describe("entryForNode", () => {
-  it("erkennt Token-Stufen und native Stufen", () => {
+  it("erkennt Token-Stufen und Stufen ohne Token", () => {
     expect(entryForNode(node("title", { id: "sbt-display-xl--a", format: "big" }))?.key).toBe("display-xl");
-    expect(entryForNode(node("title", { id: "a", format: "medium" }))?.key).toBe("display-s");
     expect(entryForNode(node("title", { id: "a", format: "small" }))?.key).toBe("h1");
     expect(entryForNode(node("mediumHeading", { id: "a" }))?.key).toBe("h3");
     expect(entryForNode(node("paragraph", { id: "a" }))?.key).toBe("body-m");
   });
 
-  it("erkennt Display L und S auch mit ihrem Token", () => {
+  it("erkennt Display L und S an ihrem Token", () => {
     expect(entryForNode(node("title", { id: "sbt-display-s--a", format: "medium" }))?.key).toBe("display-s");
     expect(entryForNode(node("title", { id: "sbt-display-l--a", format: "big" }))?.key).toBe("display-l");
   });
 
-  it("liest einen Title ohne Format als „big“, wie Studio", () => {
-    expect(entryForNode(node("title", { id: "a" }))?.key).toBe("display-l");
+  // Das Frontend kennt das Titelformat nicht: man-theme setzt jeden
+  // Titel-Baustein ohne Token auf H1 (32px). Bis 20.11.2026 nannte der Editor
+  // einen solchen Titel nach seinem Format „Display L“ (big, Studios Vorgabe
+  // für jeden neuen Titel) bzw. „Display S“ (medium) — live stand er auf 32px.
+  it("zeigt einen Titel ohne Token als H1, egal welches Format, wie das Frontend", () => {
+    expect(entryForNode(node("title", { id: "a", format: "big" }))?.key).toBe("h1");
+    expect(entryForNode(node("title", { id: "a", format: "medium" }))?.key).toBe("h1");
+    expect(entryForNode(node("title", { id: "a" }))?.key).toBe("h1");
   });
 
   it("ignoriert einen Token am falschen Typ und zeigt die native Stufe", () => {

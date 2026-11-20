@@ -1,68 +1,72 @@
-# FAQ
+# Veelgestelde vragen
 
-**Vraag:** In het formaat selectieveld ontbreekt de groep "MAN Typo Scale". Wat te doen? 
+**Vraag:** In het keuzemenu voor formaten ontbreekt de groep „MAN Typo-schaal“. Wat moet ik doen?
 
-Antwoord: Studio laadt de extensie pas als er een aangepaste block is opgebouwd
-en vergeet het als het browsertabblad opnieuw wordt geladen. 
-Zet hem aan zoals beschreven in "Stap voor stap zet → extensie aan" 
-. Als de groep daarna nog steeds ontbreekt, Studio
-Gewijzigd — meld dit alsjeblieft aan het team dat de widgets onderhoudt. 
+Antwoord: Studio laadt de uitbreiding pas wanneer een door de gebruiker gedefinieerd blok
+wordt ingevoegd of bewerkt, en vergeet deze bij het opnieuw laden van het browsertabblad.
+Schakel de extensie in zoals beschreven onder „Stap voor stap → Extensie inschakelen“.
+Als de groep daarna nog steeds ontbreekt, is Studio waarschijnlijk
+gewijzigd — meld dit dan alstublieft aan het team dat de widgets beheert.
 
-**Vraag:** Kan ik de uitbreiding als bouwblok op de pagina toevoegen? 
+**Vraag:** Kan ik de extensie als bouwsteen op de pagina invoegen?
 
-Antwoord: Nee. Het heeft geen zichtbare inhoud en verschijnt daarom niet in
-in de lijst Blokken selecteren. Het werkt alleen in het veld Formaatselectie van Titel en
-Tekst en in het "Container bewerken"-dialoog. 
+Antwoord: Nee. De extensie heeft geen zichtbare inhoud en verschijnt daarom niet in
+de lijst „Blok selecteren“. Ze werkt alleen in het formaatkeuzemenu van Titel en
+Tekst en in het dialoogvenster „Container bewerken“.
 
-**Vraag:** Ik zie het level in de editor, maar niet op de gepubliceerde pagina. 
+**Vraag:** In de editor zie ik het niveau, maar op de gepubliceerde pagina niet.
 
-Antwoord: Dan ontbreekt de aangepaste CSS met de typefoutuitbreiding in Studio of is dat wel
-Verouderd. Dit is wat de studioadministratie regelt. 
+Antwoord: Dan ontbreekt in Studio de aangepaste CSS met de Typo-uitbreiding of is deze
+verouderd. Dit wordt door de Studio-beheerder ingesteld.
 
-**Vraag:** Er is een stap op de gepubliceerde pagina, maar niet in de editor. 
+**Vraag:** Op de gepubliceerde pagina is een niveau te zien, in de editor niet.
 
-Antwoord: De extensie is nog niet actief in je browsertabblad. Wisselen
-Voer het in en open de pagina opnieuw. 
+Antwoord: De uitbreiding is nog niet actief in uw browsertabblad. Schakel
+deze in en open de pagina opnieuw.
 
-**Vraag:** "Display L" lijkt zo groot als "H1" of kleiner dan verwacht. 
+**Vraag:** Een titel is op de gepubliceerde pagina slechts zo groot als „H1“, hoewel ik een weergave-niveau wilde.
 
-Antwoord: De thematypografie in Studio (look & feel → typografie) is nog steeds
-niet op de MAN-schaal. Dit wordt geregeld door de studioadministratie. 
+Antwoord: De titel heeft nog geen niveau. Een titel zonder geselecteerd niveau
+staat altijd op H1 (32 px) — dit geldt voor elke nieuwe titel en voor titels uit
+oudere versies, die de editor nog als „Display L“ of „Display S“
+weergeeft. Plaats de cursor in de titel, selecteer het niveau onder
+**„MAN Typo-schaal“** (het krijgt dan een donker label) en klik
+op **Opslaan**.
 
-**Vraag:** Na duplicatie is de kopie zijn fase kwijtgeraakt. 
+**Vraag:** Na het dupliceren is het niveau van de kopie verdwenen.
 
-Antwoord: Dit is bekend: De kopie krijgt een nieuwe identificatie zonder niveau. 
-Reset het level op de kopie. 
+Antwoord: Dit is bekend: de kopie krijgt een nieuwe identificatie zonder niveau.
+Stel het niveau opnieuw in voor de kopie.
 
-**Vraag:** Na het wijzigen van alinea naar H2 is de kop van normale grootte, hoewel "Body L" eerder was ingesteld. 
+**Vraag:** Na een wisseling van alinea naar H2 is de koptekst normaal groot, hoewel eerder „Body L“ was ingesteld.
 
-Antwoord: Opzettelijk: Hoofdniveaus gelden alleen voor alinea's. De uitbreiding verwijderd
-Het level dat de volgende keer dat je opslaat niet meer overeenkomt. 
+Antwoord: Dit is de bedoeling: Body-niveaus gelden alleen voor alinea’s. De extensie verwijdert
+het niet langer passende niveau bij de volgende keer opslaan.
 
-**Vraag:** In het dialoogvenster "Container bewerken" ontbreekt het gedeelte "Verticale uitlijning". 
+**Vraag:** In het dialoogvenster „Container bewerken“ ontbreekt het gedeelte „Verticale uitlijning“.
 
-Antwoord: De extensie is nog niet actief in je browsertabblad. Wisselen
-Je kunt hem aanzetten zoals beschreven in "Zet → verlengstuk stap voor stap aan". 
-en open het dialoogvenster opnieuw. De sectie is alleen beschikbaar in het tabblad
-**Lay-out**. 
+Antwoord: De extensie is nog niet actief in uw browsertabblad. Schakel
+deze in zoals beschreven onder „Stap voor stap → Extensie inschakelen“
+en open het dialoogvenster opnieuw. Het gedeelte staat alleen in het tabblad
+**Lay-out**.
 
-**Vraag:** Waarom zie ik de targeting niet op de gepubliceerde pagina? 
+**Vraag:** Waarom zie ik de uitlijning niet op de gepubliceerde pagina?
 
-Antwoord: Controleer eerst of de kolommen verschillende hoeveelheden inhoud bevatten — 
-Als ze even lang zijn, is er niets te doen. Op de smartphone staan
-de kolommen onderling; daar werkt de uitlijning bewust niet. Als deze ontbreekt,
-zelfs op het bureaublad is de aangepaste CSS in Studio verouderd. Dit
-Studioadministratie. 
+Antwoord: Controleer eerst of de kolommen verschillende hoeveelheden inhoud bevatten —
+als ze even lang zijn, valt er niets uit te lijnen. Op de smartphone staan
+de kolommen onder elkaar; daar werkt de uitlijning bewust niet. Als deze
+ook op de desktop ontbreekt, is de aangepaste CSS in Studio verouderd. Dit wordt aangepast door de
+Studio-beheerder.
 
-**Vraag:** Wat betekent "like container" voor een kolom? 
+**Vraag:** Wat betekent „als container“ bij een kolom?
 
-Antwoord: De kolom erft de oriëntatie die hierboven is voor de hele container
-is geselecteerd. Als je boven, midden of onderkant selecteert, de
-Eigen houding. 
+Antwoord: De kolom neemt de uitlijning over die bovenaan voor de hele container
+is gekozen. Kiest u boven, midden of onder, dan geldt voor deze kolom de
+eigen instelling.
 
-**Vraag:** Hoe schakel ik de debugging-extensie in mijn browser uit? 
+**Vraag:** Hoe schakel ik de extensie voor foutopsporing in mijn browser uit?
 
-Antwoord: Open in Studio de ontwikkelaarsconsole van de browser en typ in
-'localStorage.setItem("sbt-typo-scale", "off")', en laad dan het tabblad opnieuw. 
-Zet het opnieuw aan met 'localStorage.removeItem("sbt-typo-scale")'. Dit werkt
-alleen in je browser.
+Antwoord: Open in Studio de ontwikkelaarsconsole van de browser en voer
+`localStorage.setItem("sbt-typo-scale", "off")` in en vernieuw vervolgens het tabblad.
+Schakel het weer in met `localStorage.removeItem("sbt-typo-scale")`. Dit werkt
+alleen in uw browser.

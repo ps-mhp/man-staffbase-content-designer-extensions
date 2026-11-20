@@ -1,68 +1,71 @@
 # FAQ
 
-**Question:** In the format selection field, the group "MAN Typo Scale" is missing. What to do? 
+**Question:** The "MAN Typo Scale" group is missing from the format selection field. What should I do?
 
-Answer: Studio doesn't load the extension until a custom block
-and forgets about it when the browser tab is reloaded. 
-Turn it on as described in "Step-by-step turn on → extension" 
-. If the group is still missing after that, Studio
-changed — please report this to the team that maintains the widgets. 
+Answer: Studio only loads the extension when a custom block
+is inserted or edited, and it forgets to load it when the browser tab is reloaded.
+Enable it as described under “Step by Step → Enable Extension.”
+If the group is still missing afterward, Studio has likely
+changed—please report this to the team that maintains the widgets.
 
-**Question:** Can I add the extension as a building block on the page? 
+**Question:** Can I insert the extension as a building block on the page?
 
 Answer: No. It has no visible content and therefore does not appear in
-in the Select Block list. It only works in the Format selection field of Title and
-Text and in the "Edit Container" dialog. 
+the “Select Block” list. It only takes effect in the format selection fields for Title and
+Text and in the “Edit Container” dialog.
 
-**Question:** I see the level in the editor, but not on the published page. 
+**Question:** I can see the step in the editor, but not on the published page.
 
-Answer: Then the custom CSS with the typo extension is missing in Studio or is
-deprecated. This is what the studio administration sets up. 
+Answer: In that case, the Custom CSS with the Typo extension is either missing from Studio or is
+out of date. The Studio administration team will take care of this.
 
-**Question:** There is a step on the published page, but not in the editor. 
+**Question:** A level is visible on the published page, but not in the editor.
 
-Answer: The extension is not yet active in your browser tab. Toggle
-Enter it and open the page again. 
+Answer: The extension is not yet active in your browser tab. Enable
+it and reopen the page.
 
-**Question:** "Display L" appears as large as "H1" or smaller than expected. 
+**Question:** A title on the published page is only as large as “H1,” even though I wanted a display level.
 
-Answer: The theme typography in Studio (look & feel → typography) is still
-not set to the MAN scale. This is set up by the studio administration. 
+Answer: The title does not yet have a level assigned to it. A title without a selected level
+is always set to H1 (32 px)—this applies to every new title and to titles from
+older versions that the editor still displayed as “Display L” or “Display S.” Place the cursor in the title, select the level under
+**“MAN Typo Scale”** (it will then be highlighted in dark), and click
+**Save**.
 
-**Question:** After duplicating, the copy has lost its stage. 
+**Question:** After duplicating, the copy has lost its level.
 
-Answer: This is known: The copy gets a new identifier without a level. 
-Reset the level on the copy. 
+Answer: This is a known behavior: The copy is assigned a new identifier without a level.
+Reassign the level to the copy.
 
-**Question:** After changing from paragraph to H2, the heading is normal size, although "Body L" was previously set. 
+**Question:** After switching from a paragraph to an H2 heading, the heading is normal size even though “Body L” was previously set.
 
-Answer: Intentional: Body levels only apply to paragraphs. Removed the extension
-the level that no longer matches the next time you save. 
+Answer: Intended behavior: Body levels apply only to paragraphs. The extension removes
+the no-longer-appropriate level the next time you save.
 
-**Question:** In the "Edit Container" dialog, the "Vertical Alignment" section is missing. 
+**Question:** The “Vertical Alignment” section is missing from the “Edit Container” dialog.
 
-Answer: The extension is not yet active in your browser tab. Toggle
-You can turn it on as described in "Turn on → extension step by step" 
-and open the dialog again. The section is only available in the tab
-**Layout**. 
+Answer: The extension is not yet active in your browser tab. Enable
+it as described under “Step by Step → Enable Extension”
+and reopen the dialog. The section is only available in the
+**Layout** tab.
 
-**Question:** Why don't I see the targeting on the published page? 
+**Question:** Why don’t I see the alignment on the published page?
 
-Answer: First, check if the columns have different amounts of content — 
-If they are the same length, there is nothing to do. Standing on the smartphone
-the columns among each other; there the alignment deliberately does not work. If it is missing,
-even on the desktop, the custom CSS in Studio is deprecated. This
-Studio Administration. 
+Answer: First, check whether the columns have different amounts of content—
+if they are the same length, there is nothing to align. On a smartphone,
+the columns appear one below the other; the alignment is intentionally disabled there. If it’s
+missing on the desktop as well, the Custom CSS in Studio is out of date. The
+Studio administration team will fix this.
 
-**Question:** What does "like container" mean for a column? 
+**Question:** What does “like container” mean for a column?
 
-Answer: The column inherits the orientation that is above for the whole container
-is selected. If you select top, middle, or bottom, the
-own attitude. 
+Answer: The column adopts the alignment selected above for the entire container
+. If you select top, middle, or bottom, that
+setting applies to this column.
 
-**Question:** How do I turn off the debugging extension in my browser? 
+**Question:** How do I disable the debugging extension in my browser?
 
-Answer: In Studio, open the browser's developer console and type
-'localStorage.setItem("sbt-typo-scale", "off")', then reload the tab. 
-Turn it on again with 'localStorage.removeItem("sbt-typo-scale")'. This works
-only in your browser.
+Answer: Open the browser’s developer console in Studio and enter
+`localStorage.setItem("sbt-typo-scale", "off")`, then reload the tab.
+To re-enable it, use `localStorage.removeItem("sbt-typo-scale")`. This only affects
+your browser.

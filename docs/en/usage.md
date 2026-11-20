@@ -1,78 +1,78 @@
-# Step by step
+# Step by Step
 
-## Turn on extension
+## Enable the Extension
 
-Studio doesn't load the extension until a custom block is edited
-. Once per browser tab is enough. 
+Studio loads the extension only when a custom block is being edited.
+Once per browser tab is sufficient.
 
-1. In Studio, under **Content**, open a page in the **Editor**. 
-2. Does the page contain a **Custom Block** (such as a table)
-   or a project plan): Click on it and then click **Edit**. 
-   Close the window again without changing anything. 
-3. If the page doesn't contain one: Add a
-   **Custom Block**, click on it, and then click
-   **Edit**. Close the window and delete the block again. 
+1. In Studio, under **Content**, open a page in the **Editor**.
+2. If the page contains a **Custom Block** (such as a table
+   or a project plan): Click on it and then click **Edit**.
+   Close the window without making any changes.
+3. If the page does not contain one: Insert a
+   **Custom Block** via **Blocks**, click on it, and then click
+   **Edit**. Close the window and delete the block again.
 4. Place the cursor in a title or paragraph and open the
-   Format selection field in the toolbar. If the group
-   **"MAN Typo-Scale"**, the extension is active — for all pages that you
-   in this browser tab. 
+   format selection panel in the toolbar. If the group
+   **“MAN Typo Scale”** appears there, the extension is active—for all pages you
+   open in this browser tab.
 
-## Set a step
+## Setting a Level
 
-1. Put the cursor in the title or paragraph. To move multiple paragraphs
-   at once, mark them. 
-2. Open the format selection box in the toolbar (it shows the current
-   Level, e.g. "Body M · 16“). 
-3. Select the desired level under **"MAN Typo Scale"**. Titles offer the
-   Steps Display 2XL to H1, Texts H2 to Body XS. 
-4. Check the result: Additional steps have a dark one in the upper right corner
-   label. Use **Ctrl+Z** (Mac: **⌘+Z**) to undo the change. 
-5. Click on **Save**. 
+1. Place the cursor in the heading or paragraph. To change multiple paragraphs
+   at once, select them.
+2. Open the Format selection panel in the toolbar (it displays the current
+   level, e.g., “Body M · 16”).
+3. Under **“MAN Typo Scale”**, select the desired level. Headings offer the
+   levels Display 2XL through H1; body text offers H2 through Body XS.
+4. Check the result: Additional levels have a dark
+   label in the upper-right corner. Use **Ctrl+Z** (Mac: **⌘+Z**) to undo the change.
+5. Click **Save**.
 
-## Remove an additional level
+## Removing an Additional Level
 
-1. Place the cursor in the block. 
+1. Place the cursor in the block.
 2. In the format selection field, select a level without a label, such as
-   **Display L**, **H1** or **Body M**. 
-3. Click **Save**. 
+   **H1**, **H2**, or **Body M**.
+3. Click **Save**.
 
-## Vertically align column contents
+## Align column contents vertically
 
-1. Click on the container and then click on
-   **Edit container** (pencil icon). 
-2. In the **Layout** tab, under the layout buttons, you will find the
-   **"Vertical Orientation"**. Select **top**, **middle** or **bottom** — 
-   this applies to all columns of the container. 
-3. If you want a column to differ: In its row (**column 1**, 
-   **column 2** ...) the desired orientation. **as container** takes over
-   the setting of the container again. Move the mouse over a
-   row, the column is outlined in blue in the editor. 
-4. The editor will show the alignment immediately. With **Ctrl+Z** (Mac: **⌘+Z**)
-   undo a change. 
-5. Click on **Save**. 
+1. Click the container, then click
+   **Edit Container** (pencil icon) in its toolbar.
+2. On the **Layout** tab, under the layout buttons, you’ll find the
+   **“Vertical Alignment”** section. Select **top**, **middle**, or **bottom**—
+   this applies to all columns in the container.
+3. If you want a specific column to be different: Select the desired alignment in its row (**Column 1**,
+   **Column 2** …). **As container** applies
+   the container’s setting again. When you hover your mouse over a
+   row, the column in the editor is outlined in blue.
+4. The editor displays the alignment immediately. Use **Ctrl+Z** (Mac: **⌘+Z**)
+   to undo a change.
+5. Click **Save**.
 
-The alignment is only visible if the columns contain different amounts of content
-— the shorter column then moves down or to the middle. 
+The alignment is only visible if the columns have different amounts of content
+— the shorter column will then move down or to the center.
 
 ## Rules for Editors
 
-1. Edit pages with additional levels only with an active extension. None
-   you don't see the level in the editor, but it works for readers
-   continues. 
-2. Reset the level and orientation after **Duplicate** or Copy: 
-   She does not notice the copy. 
-3. Do not assign an additional level or alignment to blocks that have a
-   Jump link (anchor) shows — setting changes the identifier of the block that is
-   Link would go nowhere. 
-4. Use one title per page and divide below it with H2 to H4. 
+1. Edit pages with additional levels only when the extension is active. Without
+   it, you won’t see the level in the editor, but it will still be visible
+   to readers.
+2. Reset the level and alignment after **Duplicating** or copying:
+   The copy will not inherit these settings.
+3. Do not assign a sub-level or alignment to blocks that a
+   jump link (anchor) points to—setting these changes the block’s identifier, and
+   the link would go nowhere.
+4. Use one title per page and structure the content below it with H2 through H4 headings.
 
-## When something doesn't work
+## If something isn’t working
 
-1. If the "MAN Typo Scale" group is missing: Switch the extension as above
-   . After reloading the browser tab, this is necessary again. 
-2. If the "Vertical Alignment" section is missing from the **Layout** tab: Even then
-   the extension is not turned on. Then click the
-   again and reopen the dialog. 
-3. Does the step or orientation in the editor look correct on the
-   published page: Please contact the
-   Studio administration — then the current custom CSS is missing.
+1. If the “MAN Typo Scale” group is missing: Enable the extension as
+   described above. You’ll need to do this again after reloading the browser tab.
+2. If the “Vertical Alignment” section is missing from the **Layout** tab: This also
+   means the extension is not enabled. Click the container
+   again and reopen the dialog.
+3. If the level or alignment looks correct in the editor but not on the
+   published page: Contact the
+   Studio administration—the current custom CSS is missing.

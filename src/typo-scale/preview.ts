@@ -12,25 +12,35 @@
  */
 
 /**
- * Vorschau im Editor: Node-Views bekommen `data-sbt="<token>"`, das
- * Studio-CSS zeigt danach Größe und ein Badge. Der Trigger des
- * Format-Dropdowns zeigt die aktive Stufe, z. B. „Display 2XL · 72“.
+ * Vorschau im Editor: jeder Node-View der Skala bekommt seine Stufe als
+ * `data-sbt-step="<key>"`, und das Studio-CSS setzt dafür Größe und
+ * Zeilenhöhe — für Stufen mit UND ohne Token. Ohne Token zeigte Studio sonst
+ * seine eigene Theme-Typografie (live gemessen 20.11.2026: H2 36px statt 28,
+ * Body M 14px statt 16, Titel je Format 36/24/20px statt 32 wie im
+ * Frontend). Blöcke mit Token tragen zusätzlich `data-sbt="<token>"` für das
+ * Badge. Der Trigger des Format-Dropdowns zeigt die aktive Stufe, z. B.
+ * „Display 2XL · 72“.
  */
 
 import { entryForNode, findTarget, validToken } from "./editor-access";
-import { TOKENS, contextOf } from "./scale";
+import { ALL_ENTRIES, contextOf } from "./scale";
 import { TiptapEditor } from "../tiptap";
 
 export const TRIGGER_SELECTOR = "[data-contextual-toolbar] .ds-single-select__trigger";
+
+/** Setzt ein data-Attribut nur bei Änderung, entfernt es bei `null`. */
+function syncData(dom: HTMLElement, name: "sbt" | "sbtStep", value: string | null): void {
+  if (value && dom.dataset[name] !== value) dom.dataset[name] = value;
+  if (!value && dom.dataset[name]) delete dom.dataset[name];
+}
 
 export function markNodeViews(editor: TiptapEditor): void {
   editor.state.doc.descendants((node, pos) => {
     if (!contextOf(node.type.name)) return true;
     const dom = editor.view.nodeDOM(pos);
     if (!(dom instanceof HTMLElement)) return false;
-    const token = validToken(node);
-    if (token && dom.dataset.sbt !== token) dom.dataset.sbt = token;
-    if (!token && dom.dataset.sbt) delete dom.dataset.sbt;
+    syncData(dom, "sbt", validToken(node));
+    syncData(dom, "sbtStep", entryForNode(node)?.key ?? null);
     return false;
   });
 }
@@ -45,13 +55,13 @@ export function syncTriggerLabel(editor: TiptapEditor | null, root: ParentNode =
 }
 
 export function studioCss(hideNativeOptions: boolean): string {
-  const tokenRules = [...TOKENS.values()].map(
+  const stepRules = ALL_ENTRIES.map(
     (entry) =>
-      `.ProseMirror [data-sbt="${entry.apply.token}"] [data-node-view-content]` +
+      `.ProseMirror [data-sbt-step="${entry.key}"] [data-node-view-content]` +
       `{font-size:${entry.px}px!important;line-height:${entry.lh}!important}`,
   );
   return [
-    ...tokenRules,
+    ...stepRules,
     ".ProseMirror [data-sbt]{position:relative}",
     ".ProseMirror [data-sbt]::after{content:attr(data-sbt);position:absolute;inset-inline-end:0;top:0;transform:translateY(-100%);" +
       "font:600 10px/16px Inter,sans-serif;padding:0 6px;border-radius:4px;background:#303c49;color:#fff;pointer-events:none}",

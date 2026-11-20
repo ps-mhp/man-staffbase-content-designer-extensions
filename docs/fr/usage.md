@@ -1,78 +1,78 @@
-# Pas à pas
+# Étape par étape
 
-## Activez l’extension
+## Activer l'extension
 
-Studio ne charge l’extension qu’une fois qu’un bloc personnalisé n’est pas édité
-. Une fois par onglet de navigateur suffit. 
+Studio ne charge l'extension que lorsqu'un bloc personnalisé est en cours d'édition.
+Une seule fois par onglet du navigateur suffit.
 
-1. Dans Studio, sous **Contenu**, ouvrez une page dans l'**Éditeur**. 
-2. La page contient-elle un **Bloc personnalisé** (comme un tableau) ?
-   ou un plan de projet) : Cliquez dessus puis cliquez sur **Modifier**. 
-   Referme la fenêtre sans rien changer. 
-3. Si la page n’en contient pas : ajouter un
-   **Bloc personnalisé**, cliquez dessus, puis cliquez
-   **Édition**. Fermez la fenêtre et supprimez à nouveau le bloc. 
-4. Placez le curseur dans un titre ou un paragraphe et ouvrez le
-   Champ de sélection de format dans la barre d’outils. Si le groupe
-   **"HOMME Typo-Scale"**, l’extension est active — pour toutes les pages que vous
-   dans cet onglet navigateur. 
+1. Dans Studio, sous **Contenu**, ouvrez une page dans l'**éditeur**.
+2. Si la page contient un **bloc personnalisé** (par exemple un tableau
+   ou un plan de projet) : cliquez dessus, puis sur **Modifier**.
+   Refermez la fenêtre sans apporter de modification.
+3. Si la page n’en contient pas : insérez un
+   **bloc personnalisé** via **Blocs**, cliquez dessus, puis sur
+   **Modifier**. Fermez la fenêtre et supprimez à nouveau le bloc.
+4. Placez le curseur dans un titre ou un paragraphe et ouvrez la
+   liste de formats dans la barre d’outils. Si le groupe
+   **« Échelle typographique MAN »** y figure, l’extension est active — pour toutes les pages que vous
+   ouvrez dans cet onglet du navigateur.
 
-## Mets un pas
+## Définir un niveau
 
-1. Placez le curseur dans le titre ou le paragraphe. Pour déplacer plusieurs paragraphes
-   Marquez-les immédiatement. 
-2. Ouvrez la boîte de sélection de format dans la barre d’outils (elle affiche la fonction actuelle
-   Niveau, par exemple « Corps M · 16“). 
-3. Sélectionnez le niveau souhaité sous **"MAN Typfo Scale"**. Les titres offrent le
-   Les étapes affichent 2XL vers H1, les textos H2 vers le corps XS. 
-4. Vérifiez le résultat : Des étapes supplémentaires ont une étape sombre en haut à droite
-   Étiquette. Utilise **Ctrl+Z** (Mac : **⌘+Z**) pour annuler le changement. 
-5. Cliquez sur **Enregistrer**. 
+1. Placez le curseur dans le titre ou dans le paragraphe. Pour modifier plusieurs paragraphes
+   à la fois, sélectionnez-les.
+2. Ouvrez le menu de formatage dans la barre d’outils (il affiche le niveau actuel
+  , par exemple « Body M · 16 »).
+3. Sous **« Échelle typographique MAN »**, sélectionnez le niveau souhaité. Les titres proposent les
+   niveaux Display 2XL à H1, les textes H2 à Body XS.
+4. Vérifiez le résultat : les niveaux supplémentaires sont signalés par une étiquette sombre
+   en haut à droite. Appuyez sur **Ctrl+Z** (Mac : **⌘+Z**) pour annuler la modification.
+5. Cliquez sur **Enregistrer**.
 
-## Supprime un niveau supplémentaire
+## Supprimer un niveau supplémentaire
 
-1. Placez le curseur dans le bloc. 
-2. Dans le champ de sélection du format, sélectionnez un niveau sans étiquette, comme
-   **Afficher L**, **H1** ou **Corps M**. 
-3. Cliquez **Enregistrer**. 
+1. Placez le curseur dans le bloc.
+2. Dans le menu déroulant de format, sélectionnez un niveau sans étiquette, par exemple
+   **H1**, **H2** ou **Body M**.
+3. Cliquez sur **Enregistrer**.
 
-## Aligner verticalement le contenu de la colonne
+## Aligner verticalement le contenu d’une colonne
 
-1. Cliquez sur le conteneur puis cliquez sur
-   **Conteneur d’édition** (icône crayon). 
-2. Dans l’onglet **Layout**, sous les boutons de mise en page, vous trouverez le
-   **« Orientation verticale »**. Sélectionnez **haut**, **milieu** ou **bas** — 
-   Cela s’applique à toutes les colonnes du conteneur. 
-3. Si vous voulez qu’une colonne diffère : Dans sa ligne (**colonne 1**), 
-   **colonne 2** ...) l’orientation souhaitée. **en tant que conteneur** prend le relais
-   le réglage du conteneur à nouveau. Déplacez la souris sur un
-   ligne, la colonne est délimitée en bleu dans l’éditeur. 
-4. L’éditeur affichera immédiatement l’alignement. Avec **Ctrl+Z** (Mac : **⌘+Z**)
-   Annuler un changement. 
-5. Cliquez sur **Enregistrer**. 
+1. Cliquez sur le conteneur, puis sur
+   **Modifier le conteneur** (icône en forme de crayon) dans sa barre d’outils.
+2. Dans l’onglet **Mise en page**, sous les boutons de mise en page, vous trouverez la section
+   **« Alignement vertical »**. Sélectionnez **en haut**, **au centre** ou **en bas** —
+   cela s’applique à toutes les colonnes du conteneur.
+3. Si vous souhaitez définir un alignement différent pour une colonne : sélectionnez l’alignement souhaité dans sa ligne (**Colonne 1**,
+   **Colonne 2** …) L’option **Comme le conteneur** applique
+   à nouveau le paramètre du conteneur. Lorsque vous passez la souris sur une
+   ligne, la colonne est encadrée en bleu dans l’éditeur.
+4. L’éditeur affiche immédiatement l’alignement. Avec **Ctrl+Z** (Mac : **⌘+Z**),
+   vous pouvez annuler une modification.
+5. Cliquez sur **Enregistrer**.
 
 L’alignement n’est visible que si les colonnes contiennent des quantités de contenu différentes
-— la colonne la plus courte descend alors ou se déplace vers le centre. 
+— la colonne la plus courte se déplace alors vers le bas ou vers le centre.
 
-## Règles pour les éditeurs
+## Règles pour la rédaction
 
-1. Modifier les pages avec des niveaux supplémentaires uniquement avec une extension active. Aucune
-   On ne voit pas le niveau dans l’éditeur, mais ça fonctionne pour les lecteurs
-   continue. 
-2. Réinitialisez le niveau et l’orientation après **Dupliquer** ou Copie : 
-   Elle ne remarque pas la copie. 
-3. N’attribuez pas de niveau ou d’alignement supplémentaire aux blocs qui possèdent un
-   Le lien de saut (ancre) montre — le réglage modifie l’identifiant du bloc qui est
-   Link n’irait nulle part. 
-4. Utiliser un titre par page et diviser en dessous de H2 à H4. 
+1. Modifiez les pages comportant des niveaux supplémentaires uniquement lorsque l’extension est active. Sans
+   celle-ci, vous ne voyez pas le niveau dans l’éditeur, mais il reste
+   effectif pour les lecteurs.
+2. Redéfinissez le niveau et l’alignement après une opération **Dupliquer** ou **Copier** :
+   la copie n’en hérite pas.
+3. N’attribuez ni niveau supplémentaire ni alignement aux blocs vers lesquels pointe un
+   lien de saut (ancre) — cette attribution modifie l’identifiant du bloc, le
+   lien ne mènerait plus nulle part.
+4. Utilisez un titre par page et structurez le contenu en dessous avec des balises H2 à H4.
 
-## Quand quelque chose ne marche pas
+## Si quelque chose ne fonctionne pas
 
-1. Si le groupe « MAN Typo Scale » manque : Changer l’extension comme ci-dessus
-   . Après avoir rechargé l’onglet du navigateur, cela redevient nécessaire. 
-2. Si la section « Alignement vertical » manque dans l’onglet **Layout** : même dans ce cas
-   L’extension n’est pas activée. Puis cliquez sur le
-   Encore et rouvre le dialogue. 
-3. L’étape ou l’orientation dans l’éditeur a-t-elle l’air correcte sur le
-   page publiée : Veuillez contacter le
-   Administration du studio — alors le CSS personnalisé actuel manque.
+1. Si le groupe « MAN Typo-Skala » est manquant : activez l’extension comme décrit ci-dessus.
+   Après avoir rechargé l’onglet du navigateur, cette opération est à refaire. Après avoir actualisé l’onglet du navigateur, cette opération est à refaire.
+2. Si la section « Alignement vertical » manque dans l’onglet **Mise en page** : dans ce cas également,
+   l’extension n’est pas activée. Cliquez ensuite à nouveau sur le conteneur
+   et rouvrez la boîte de dialogue.
+3. Si le niveau ou l’alignement s’affiche correctement dans l’éditeur, mais pas sur la
+   page publiée : contactez l’
+  administration de Studio — cela signifie que le CSS personnalisé actuel est manquant.

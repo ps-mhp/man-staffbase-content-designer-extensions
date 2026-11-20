@@ -62,21 +62,21 @@ export function validToken(node: PmNode): string | null {
   return token && TOKENS.get(token)?.apply.node === node.type.name ? token : null;
 }
 
-/** Die Stufe, die ein Block gerade trägt. */
+/**
+ * Die Stufe, die ein Block gerade trägt — so, wie das Frontend ihn zeigt.
+ *
+ * Ohne Token zählt nur der Node-Typ, nicht das Titelformat: man-theme kennt
+ * das Format nicht und setzt jeden Titel-Baustein ohne Token auf H1. Bis
+ * 20.11.2026 las der Editor einen Titel ohne Token nach seinem Format als
+ * Display L (big, Studios Vorgabe für jeden neuen Titel) bzw. Display S
+ * (medium) — die Leser sahen dort 32px.
+ */
 export function entryForNode(node: PmNode): ScaleEntry | null {
   const context = contextOf(node.type.name);
   if (!context) return null;
   const token = validToken(node);
   if (token) return TOKENS.get(token) ?? null;
-  const format = node.attrs.format ?? "big";
-  return (
-    SCALE[context].find(
-      (entry) =>
-        (!entry.apply.token || entry.apply.native === true) &&
-        entry.apply.node === node.type.name &&
-        (!entry.apply.format || entry.apply.format === format),
-    ) ?? null
-  );
+  return SCALE[context].find((entry) => !entry.apply.token && entry.apply.node === node.type.name) ?? null;
 }
 
 /**

@@ -41,6 +41,39 @@ describe("markNodeViews", () => {
     expect(stale.dataset.sbt).toBeUndefined();
     expect(wrongType.dataset.sbt).toBeUndefined();
   });
+
+  // Ohne Token zeigte Studio seine eigene Theme-Typografie (live gemessen
+  // 20.11.2026: H2 36px statt 28, Body M 14px statt 16, Titel je Format
+  // 36/24/20px statt 32). Die Stufe steht deshalb an JEDEM Block.
+  it("schreibt an jeden Block der Skala seine Stufe, auch ohne Token", () => {
+    const title = document.createElement("div");
+    const paragraph = document.createElement("div");
+    const heading = document.createElement("div");
+    const image = document.createElement("div");
+    const editor = fakeEditor(
+      [
+        { type: "title", attrs: { id: "t", format: "big" }, pos: 0 },
+        { type: "paragraph", attrs: { id: "sbt-body-s--p" }, pos: 4 },
+        { type: "bigHeading", attrs: { id: "sbt-body-l--h" }, pos: 8 },
+        { type: "image", attrs: { id: "i" }, pos: 12 },
+      ],
+      0,
+      undefined,
+      new Map([
+        [0, title],
+        [4, paragraph],
+        [8, heading],
+        [12, image],
+      ]),
+    );
+
+    markNodeViews(editor);
+
+    expect(title.dataset.sbtStep).toBe("h1");
+    expect(paragraph.dataset.sbtStep).toBe("body-s");
+    expect(heading.dataset.sbtStep).toBe("h2");
+    expect(image.dataset.sbtStep).toBeUndefined();
+  });
 });
 
 describe("syncTriggerLabel", () => {
@@ -55,6 +88,11 @@ describe("syncTriggerLabel", () => {
     expect(trigger().dataset.sbtLabel).toBe("Display 2XL · 72");
   });
 
+  it("nennt einen neuen Titel ohne Token H1, nicht Display L", () => {
+    syncTriggerLabel(fakeEditor([{ type: "title", attrs: { id: "t", format: "big" }, pos: 0 }], 0));
+    expect(trigger().dataset.sbtLabel).toBe("H1 · 32");
+  });
+
   it("leert das Label außerhalb der Skala, damit das native wieder erscheint", () => {
     trigger().dataset.sbtLabel = "Body L · 18";
     syncTriggerLabel(fakeEditor([{ type: "image", attrs: { id: "i" }, pos: 0 }], 0));
@@ -63,12 +101,15 @@ describe("syncTriggerLabel", () => {
 });
 
 describe("studioCss", () => {
-  it("bringt je Token eine Größe für die Vorschau mit", () => {
+  it("bringt je Stufe eine Größe für die Vorschau mit, auch für Stufen ohne Token", () => {
     const css = studioCss(true);
     // Zeilenhöhe als Faktor und ohne Einheit — dieselbe Craft-Stufe, die das
     // Frontend-CSS in `man-theme` setzt.
-    expect(css).toContain('.ProseMirror [data-sbt="display-2xl"] [data-node-view-content]{font-size:72px!important;line-height:1.3!important}');
-    expect(css).toContain('.ProseMirror [data-sbt="body-xs"] [data-node-view-content]{font-size:12px!important;line-height:1.5!important}');
+    expect(css).toContain('.ProseMirror [data-sbt-step="display-2xl"] [data-node-view-content]{font-size:72px!important;line-height:1.3!important}');
+    expect(css).toContain('.ProseMirror [data-sbt-step="body-xs"] [data-node-view-content]{font-size:12px!important;line-height:1.5!important}');
+    expect(css).toContain('.ProseMirror [data-sbt-step="h1"] [data-node-view-content]{font-size:32px!important;line-height:1.3!important}');
+    expect(css).toContain('.ProseMirror [data-sbt-step="h2"] [data-node-view-content]{font-size:28px!important;line-height:1.3!important}');
+    expect(css).toContain('.ProseMirror [data-sbt-step="body-m"] [data-node-view-content]{font-size:16px!important;line-height:1.5!important}');
   });
 
   it("blendet native Optionen nur auf Wunsch aus", () => {

@@ -1,68 +1,72 @@
 # FAQ
 
-**Pytanie:** W polu wyboru formatu brakuje grupy "MAN Literówka Skala". Co robić? 
+**Pytanie:** W polu wyboru formatu brakuje grupy „MAN Typo-Skala”. Co zrobić?
 
-Odpowiedź: Studio nie ładuje rozszerzenia, dopóki nie pojawi się niestandardowy blok
-i zapomina o tym, gdy zakładka przeglądarki zostaje ponownie załadowana. 
-Włącz go zgodnie z opisem w "Krok po kroku, włącz → rozszerzenie" 
-. Jeśli grupa nadal będzie zaginęła po tym, Studio
-Zmieniono — prosimy o zgłoszenie tego zespołowi zajmującemu się utrzymaniem widgetów. 
+Odpowiedź: Studio ładuje rozszerzenie dopiero wtedy, gdy użytkownik wstawia lub edytuje blok niestandardowy,
+a po ponownym załadowaniu karty przeglądarki rozszerzenie to jest usuwane.
+Włącz je zgodnie z opisem w sekcji „Krok po kroku → Włącz rozszerzenie”.
+Jeśli grupa nadal nie jest widoczna, prawdopodobnie nastąpiły zmiany w Studio —
+prosimy o zgłoszenie tego zespołu odpowiedzialnego za widżety.
 
-**Pytanie:** Czy mogę dodać rozszerzenie jako element budulcowy na stronie? 
+**Pytanie:** Czy mogę wstawić rozszerzenie jako moduł na stronie?
 
-Odpowiedź: Nie. Nie ma widocznej treści, dlatego nie pojawia się w
-w liście Wybierz bloki. Działa tylko w polu wyboru formatu w Title oraz
-Tekst oraz w oknie "Edytuj kontener". 
+Odpowiedź: Nie. Nie ma ona widocznej treści i dlatego nie pojawia się na
+liście „Wybierz blok”. Działa wyłącznie w polu wyboru formatu tytułu i
+tekstu oraz w oknie dialogowym „Edytuj kontener”.
 
-**Pytanie:** Widzę poziom w edytorze, ale nie na opublikowanej stronie. 
+**Pytanie:** W edytorze widzę poziom, którego nie widać na opublikowanej stronie.
 
-Odpowiedź: Wtedy w Studio brakuje niestandardowego CSS z rozszerzeniem literówek, czy jest
-przestarzałe. Tak ustawia administracja studia. 
+Odpowiedź: Oznacza to, że w Studio brakuje niestandardowego arkusza CSS z rozszerzeniem Typo lub jest on
+nieaktualny. Naprawi to administracja Studio.
 
-**Pytanie:** Na stronie opublikowanej jest krok, ale nie w edytorze. 
+**Pytanie:** Na opublikowanej stronie widać poziom, a w edytorze nie.
 
-Odpowiedź: Rozszerzenie nie jest jeszcze aktywne w karcie przeglądarki. Przełącznik
-Wpisz go i otwórz stronę ponownie. 
+Odpowiedź: Rozszerzenie nie jest jeszcze aktywne w zakładce przeglądarki. Włącz
+je i otwórz stronę ponownie.
 
-**Pytanie:** "Display L" pojawia się tak duży jak "H1" lub mniejszy niż się spodziewano. 
+**Pytanie:** Tytuł na opublikowanej stronie ma rozmiar tylko „H1”, mimo że chciałem ustawić poziom wyświetlania.
 
-Odpowiedź: Typografia tematyczna w Studio (wygląd i odczucie → typografia) nadal jest
-nie ustawione na skalę MAN. To zostało ustawione przez administrację studia. 
+Odpowiedź: Tytuł nie ma jeszcze przypisanego poziomu. Tytuł bez wybranego poziomu
+ma zawsze poziom H1 (32 px) — dotyczy to każdego nowego tytułu oraz tytułów ze
+starszych wersji, które edytor wyświetlał jeszcze jako „Display L” lub „Display S”
+. Umieść kursor w tytule, wybierz poziom w
+**„Skali typograficznej MAN”** (zostanie on wtedy oznaczony ciemną etykietą) i kliknij
+**Zapisz**.
 
-**Pytanie:** Po zdublowaniu kopia traci swój etap. 
+**Pytanie:** Po skopiowaniu kopia utraciła swój poziom.
 
-Odpowiedź: Wiadomo: Kopia otrzymuje nowy identyfikator bez poziomu. 
-Zresetuj poziom na kopii. 
+Odpowiedź: Jest to znane zjawisko: kopia otrzymuje nowy identyfikator bez poziomu.
+Należy ponownie ustawić poziom w kopii.
 
-**Pytanie:** Po zmianie z akapitu na H2 nagłówek jest normalny, chociaż wcześniej ustawiono "Ciało L". 
+**Pytanie:** Po zmianie z akapitu na H2 nagłówek ma normalną wielkość, mimo że wcześniej ustawiono „Body L”.
 
-Odpowiedź: Celowe: Poziomy ciała dotyczą tylko akapitów. Usunięto rozszerzenie
-poziom, który już nie pasuje przy następnym zapisie. 
+Odpowiedź: Tak ma być: poziomy Body dotyczą wyłącznie akapitów. Rozszerzenie usuwa
+nieodpowiedni poziom przy następnym zapisaniu.
 
-**Pytanie:** W oknie "Edytuj kontener" brakuje sekcji "Pionowe wyrównanie". 
+**Pytanie:** W oknie dialogowym „Edytuj kontener” brakuje sekcji „Wyrównanie pionowe”.
 
-Odpowiedź: Rozszerzenie nie jest jeszcze aktywne w karcie przeglądarki. Przełącznik
-Możesz go włączyć zgodnie z opisem w "Włącz → rozszerzenie krok po kroku" 
-i ponownie otwórz dialog. Sekcja jest dostępna tylko w zakładce
-**Układ**. 
+Odpowiedź: Rozszerzenie nie jest jeszcze aktywne w Twojej karcie przeglądarki. Włącz
+je zgodnie z opisem w sekcji „Krok po kroku → Włącz rozszerzenie”
+i otwórz ponownie okno dialogowe. Sekcja ta znajduje się wyłącznie w karcie
+**Układ**.
 
-**Pytanie:** Dlaczego nie widzę targetowania na opublikowanej stronie? 
+**Pytanie:** Dlaczego nie widzę wyrównania na opublikowanej stronie?
 
-Odpowiedź: Po pierwsze, sprawdź, czy kolumny mają różną ilość treści — 
-Jeśli mają tę samą długość, nie ma co robić. Stanie na smartfonie
-kolumny między sobą; tam wyrównanie celowo nie działa. Jeśli brakuje,
-nawet na komputerze niestandardowe CSS w Studio jest przestarzałe. To
-Administracja studia. 
+Odpowiedź: Najpierw sprawdź, czy kolumny mają różną ilość treści —
+jeśli są tej samej długości, nie ma czego wyrównywać. Na smartfonie
+kolumny znajdują się jedna pod drugą; w tym przypadku wyrównanie celowo nie działa. Jeśli nie ma go
+również na komputerze stacjonarnym, oznacza to, że niestandardowy kod CSS w Studio jest nieaktualny. Zajmuje się tym
+administracja Studio.
 
-**Pytanie:** Co oznacza "like container" dla kolumny? 
+**Pytanie:** Co oznacza opcja „jak kontener” w przypadku kolumny?
 
-Odpowiedź: Kolumna dziedziczy orientację powyżej dla całego pojemnika
-jest wybrany. Jeśli wybierzesz górę, środek lub dol, to
-własne nastawienie. 
+Odpowiedź: Kolumna przejmuje wyrównanie wybrane powyżej dla całego kontenera
+. Jeśli wybierzesz u góry, na środku lub u dołu, dla tej kolumny obowiązuje
+własne ustawienie.
 
-**Pytanie:** Jak wyłączyć rozszerzenie debugujące w mojej przeglądarce? 
+**Pytanie:** Jak wyłączyć rozszerzenie do wykrywania błędów w mojej przeglądarce?
 
-Odpowiedź: W Studio otwórz konsolę deweloperską przeglądarki i wpisz
-'localStorage.setItem("sbt-typo-scale", "off")', a następnie ponownie wczytaj zakładkę. 
-Włącz go ponownie za pomocą 'localStorage.removeItem("sbt-typo-scale")'. To działa
-Tylko w przeglądarce.
+Odpowiedź: Otwórz w Studio konsolę programisty przeglądarki i wprowadź
+`localStorage.setItem("sbt-typo-scale", "off")`, a następnie odśwież kartę.
+Aby ponownie włączyć, wpisz `localStorage.removeItem("sbt-typo-scale")`. Działa to
+tylko w Twojej przeglądarce.

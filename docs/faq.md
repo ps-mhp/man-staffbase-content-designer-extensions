@@ -24,10 +24,14 @@ veraltet. Das richtet die Studio-Administration ein.
 Antwort: Die Erweiterung ist in Ihrem Browser-Tab noch nicht aktiv. Schalten
 Sie sie ein und öffnen Sie die Seite erneut.
 
-**Frage:** „Display L“ erscheint so groß wie „H1“ oder kleiner als erwartet.
+**Frage:** Ein Titel ist auf der veröffentlichten Seite nur so groß wie „H1“, obwohl ich eine Display-Stufe wollte.
 
-Antwort: Die Theme-Typografie in Studio (Look & Feel → Typografie) ist noch
-nicht auf die MAN-Skala eingestellt. Das richtet die Studio-Administration ein.
+Antwort: Der Titel trägt die Stufe noch nicht. Ein Titel ohne ausgewählte Stufe
+steht immer auf H1 (32 px) — das gilt für jeden neuen Titel und für Titel aus
+älteren Versionen, die der Editor noch als „Display L“ oder „Display S“
+anzeigte. Setzen Sie den Cursor in den Titel, wählen Sie die Stufe unter
+**„MAN Typo-Skala“** aus (sie bekommt dann ein dunkles Etikett) und klicken Sie
+auf **Speichern**.
 
 **Frage:** Nach dem Duplizieren hat die Kopie ihre Stufe verloren.
 

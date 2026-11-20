@@ -1,68 +1,72 @@
 # Preguntas frecuentes
 
-**Pregunta:** En el campo de selección de formato, falta el grupo "MAN Typo Scale". ¿Qué hacer? 
+**Pregunta:** En el campo de selección de formatos falta el grupo «Escala tipográfica MAN». ¿Qué puedo hacer?
 
-Respuesta: Studio no carga la extensión hasta que hay un bloque personalizado
-Y se olvida de ello cuando se vuelve a cargar la pestaña del navegador. 
-Actívala como se describe en "Encender paso a paso → extensión" 
-. Si el grupo sigue desaparecido después de eso, Studio
-Modificado — Por favor, informa esto al equipo que mantiene los widgets. 
+Respuesta: Studio no carga la extensión hasta que se inserta o se edita un bloque personalizado,
+y la olvida al recargar la pestaña del navegador.
+Actívala tal y como se describe en «Paso a paso → Activar la extensión».
+Si el grupo sigue sin aparecer después de eso, es probable que Studio
+haya cambiado; por favor, informa de ello al equipo encargado de los widgets.
 
-**Pregunta:** ¿Puedo añadir la extensión como bloque de construcción en la página? 
+**Pregunta:** ¿Puedo insertar la extensión como un bloque en la página?
 
-Respuesta: No. No tiene contenido visible y, por tanto, no aparece en
-en la lista de Seleccionar bloques. Solo funciona en el campo de selección de Formato de Título y
-Texto y en el cuadro de diálogo "Editar contenedor". 
+Respuesta: No. No tiene contenido visible y, por lo tanto, no aparece en
+la lista «Seleccionar bloque». Solo surte efecto en el campo de selección de formato del título y
+del texto, y en el cuadro de diálogo «Editar contenedor».
 
-**Pregunta:** Veo el nivel en el editor, pero no en la página publicada. 
+**Pregunta:** En el editor veo el nivel, pero no en la página publicada.
 
-Respuesta: Entonces el CSS personalizado con la extensión de error tipográfico falta en Studio o sí está
-obsoleto. Esto es lo que establece la administración del estudio. 
+Respuesta: En ese caso, en Studio falta el CSS personalizado con la extensión de tipografía o está
+desactualizado. La administración de Studio se encargará de solucionarlo.
 
-**Pregunta:** Hay un paso en la página publicada, pero no en el editor. 
+**Pregunta:** En la página publicada se ve un nivel, pero no en el editor.
 
-Respuesta: La extensión aún no está activa en la pestaña de tu navegador. Alternar
-Introdúcelo y vuelve a abrir la página. 
+Respuesta: La extensión aún no está activa en la pestaña de su navegador. Actívela
+y vuelva a abrir la página.
 
-**Pregunta:** "Pantalla L" aparece tan grande como "H1" o más pequeña de lo esperado. 
+**Pregunta:** En la página publicada, un título solo tiene el tamaño de «H1», aunque yo quería un nivel de visualización.
 
-Respuesta: La tipografía temática en Studio (aspecto y tacto → tipografía) sigue siendo
-no está configurado a la escala MAN. Esto lo organiza la administración del estudio. 
+Respuesta: El título aún no tiene asignado ningún nivel. Un título sin nivel seleccionado
+siempre se muestra en H1 (32 px); esto se aplica a todos los títulos nuevos y a los títulos de
+versiones anteriores que el editor aún mostraba como «Display L» o «Display S»
+. Coloque el cursor en el título, seleccione el nivel en
+**«Escala tipográfica MAN»** (aparecerá una etiqueta oscura) y haga clic
+en **Guardar**.
 
-**Pregunta:** Tras duplicar, la copia ha perdido su etapa. 
+**Pregunta:** Tras duplicar el título, la copia ha perdido su nivel.
 
-Respuesta: Esto es conocido: La copia obtiene un nuevo identificador sin nivel. 
-Reinicia el nivel de la copia. 
+Respuesta: Es un comportamiento conocido: la copia recibe una nueva identificación sin nivel.
+Vuelva a aplicar el nivel a la copia.
 
-**Pregunta:** Tras cambiar de párrafo a H2, el encabezado es tamaño normal, aunque antes se estableció "Cuerpo L". 
+**Pregunta:** Tras cambiar de párrafo a H2, el título tiene un tamaño normal, aunque antes estaba configurado como «Body L».
 
-Respuesta: Intencionado: Los niveles del cuerpo solo se aplican a los párrafos. Se eliminó la extensión
-El nivel que ya no coincide con la próxima vez que guardes. 
+Respuesta: Es intencionado: los niveles «Body» solo se aplican a los párrafos. La extensión elimina
+el nivel que ya no es adecuado la próxima vez que se guarde.
 
-**Pregunta:** En el cuadro de diálogo "Editar contenedor", falta la sección "Alineación vertical". 
+**Pregunta:** En el cuadro de diálogo «Editar contenedor» falta la sección «Alineación vertical».
 
-Respuesta: La extensión aún no está activa en la pestaña de tu navegador. Alternar
-Puedes activarlo como se describe en "Activar → extensión paso a paso" 
-y abrir el diálogo de nuevo. La sección solo está disponible en la pestaña
-**Diseño**. 
+Respuesta: La extensión aún no está activa en la pestaña de su navegador. Actívela
+tal y como se describe en «Paso a paso → Activar la extensión»
+y vuelva a abrir el cuadro de diálogo. La sección solo aparece en la pestaña
+**Diseño**.
 
-**Pregunta:** ¿Por qué no veo la segmentación en la página publicada? 
+**Pregunta:** ¿Por qué no veo la alineación en la página publicada?
 
-Respuesta: Primero, comprueba si las columnas tienen diferentes cantidades de contenido — 
-Si tienen la misma longitud, no hay nada que hacer. De pie sobre el smartphone
-las columnas entre sí; allí la alineación deliberadamente no funciona. Si falta,
-incluso en el escritorio, el CSS personalizado en Studio está obsoleto. Esto
-Administración de estudio. 
+Respuesta: Comprueba primero si las columnas tienen diferente cantidad de contenido;
+si tienen la misma longitud, no hay nada que alinear. En el smartphone,
+las columnas aparecen una debajo de otra; allí, la alineación no se aplica deliberadamente. Si tampoco aparece
+en el ordenador, significa que el CSS personalizado en Studio está desactualizado. De ello se encarga la
+administración de Studio.
 
-**Pregunta:** ¿Qué significa "como contenedor" para una columna? 
+**Pregunta:** ¿Qué significa «como contenedor» en una columna?
 
-Respuesta: La columna hereda la orientación que está arriba para todo el contenedor
-está seleccionada. Si seleccionas arriba, centro o abajo, el
-actitud propia. 
+Respuesta: La columna adopta la alineación seleccionada anteriormente para todo el contenedor
+. Si seleccionas «arriba», «centro» o «abajo», se aplicará a esa columna la
+propia configuración.
 
-**Pregunta:** ¿Cómo desactivo la extensión de depuración en mi navegador? 
+**Pregunta:** ¿Cómo desactivo la extensión de depuración en mi navegador?
 
-Respuesta: En Studio, abre la consola de desarrolladores del navegador y escribe
-'localStorage.setItem("sbt-typo-scale", "off")', luego vuelve a cargar la pestaña. 
-Vuelve a encéndelo con 'localStorage.removeItem("sbt-typo-scale")'. Esto funciona
-Solo en tu navegador.
+Respuesta: Abre la consola de desarrollador del navegador en Studio e introduce
+`localStorage.setItem("sbt-typo-scale", "off")` y, a continuación, actualice la pestaña.
+Para volver a activarla, utilice `localStorage.removeItem("sbt-typo-scale")`. Esto solo tiene efecto
+en su navegador.

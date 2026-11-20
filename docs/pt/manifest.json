@@ -1,6 +1,6 @@
 {
-  "title": "Extensões para Designers de Conteúdo",
-  "summary": "No Content Designer, ele complementa o campo de seleção de formato do título e do texto com a escala de erros de digitação MAN com 13 níveis e o container com o alinhamento vertical de suas colunas — sem seu próprio módulo na página.",
+  "title": "Extensões do Content Designer",
+  "summary": "No Content Designer, adiciona ao campo de seleção de formato do título e do texto a escala tipográfica MAN, com 13 níveis, e ao contentor o alinhamento vertical das suas colunas — sem necessidade de um bloco específico na página.",
   "icon": "🔠",
   "pages": [
     {
@@ -15,7 +15,7 @@
     },
     {
       "id": "faq",
-      "title": "FAQ",
+      "title": "Perguntas frequentes",
       "file": "faq.md"
     }
   ]

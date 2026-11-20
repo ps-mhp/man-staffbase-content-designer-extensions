@@ -1,6 +1,6 @@
 {
-  "title": "Rozszerzenia Content Designera",
-  "summary": "W Content Designerze uzupełnia pole wyboru formatu tytułu i tekstu o skalę literówek MAN z 13 poziomami oraz kontener z pionowym wyrównaniem kolumn — bez własnego modułu na stronie.",
+  "title": "Rozszerzenia dla projektantów treści",
+  "summary": "W Content Designerze rozszerza pole wyboru formatów dla tytułu i tekstu o skalę typograficzną MAN z 13 poziomami, a kontener o opcję pionowego wyrównania kolumn — bez konieczności umieszczania na stronie osobnego modułu.",
   "icon": "🔠",
   "pages": [
     {
@@ -15,7 +15,7 @@
     },
     {
       "id": "faq",
-      "title": "FAQ",
+      "title": "Najczęściej zadawane pytania",
       "file": "faq.md"
     }
   ]

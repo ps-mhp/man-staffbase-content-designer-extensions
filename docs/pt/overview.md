@@ -1,18 +1,18 @@
-# Extensões para Designer de Conteúdo
+# Extensões do Content Designer
 
-Essa extensão complementa a caixa de seleção de formatos no Content Designer do Studio
-dos elementos **Título** e **Texto** ao redor da **Escala de Erros de Digitação HOMEM** com 13 níveis — 
-de "Display 2XL · 72" para "Body XS · 12“. Você não está adicionando um bloco de construção
-da página: Você pode selecionar o nível diretamente do título ou do parágrafo do texto, assim como
-anteriormente "Cabeçalho 2" ou "Parágrafo". 
+Esta extensão adiciona ao Content Designer do Studio, no campo de seleção de formato
+dos elementos **Título** e **Texto**, a **Escala Tipográfica MAN** com 13 níveis —
+desde «Display 2XL · 72» a «Body XS · 12». Desta forma, não insere nenhum bloco
+na página: seleciona o nível diretamente no título ou no parágrafo de texto, tal como
+até agora com «Título 2» ou «Parágrafo».
 
 | Nível | Tamanho | Elemento |
 | --- | --- | --- |
 | Display 2XL | 72 px | Título |
 | Display XL | 64 px | Título |
-| Exibição L | 56 px | Título |
-| Exibição M | 48 px | Título |
-| Exibição S | 40 px | Título |
+| Display L | 56 px | Título |
+| Display M | 48 px | Título |
+| Display S | 40 px | Título |
 | H1 | 32 px | Título |
 | H2 | 28 px | Texto |
 | H3 | 24 px | Texto |
@@ -23,45 +23,45 @@ anteriormente "Cabeçalho 2" ou "Parágrafo".
 | Corpo XS | 12 px | Texto |
 
 A estrutura da página permanece inalterada: um título é sempre o
-O título principal da página, H2 a H4, são subtítulos, níveis do corpo
-são saltos altos. Os níveis de exibição só mudam o tamanho. 
+título principal da página, H2 a H4 são subtítulos e os níveis do corpo
+são parágrafos. Os níveis de exibição alteram apenas o tamanho.
 
-## Alinhamento vertical em colunas de contêiner
+## Alinhamento vertical em colunas de um contentor
 
-Se houver colunas de comprimentos diferentes lado a lado em um **container**, 
-O conteúdo de cada coluna começa no topo. Com a extensão, você especifica 
-seja **acima**, no **meio** ou **abaixo** — para todo o recipiente
-e, se necessário, de forma diferente para colunas individuais. A configuração pode ser encontrada na
-Diálogo **Editar Container** na aba **Layout**. 
+Se num **contentor** existirem colunas de comprimentos diferentes lado a lado,
+até agora o conteúdo de cada coluna começava na parte superior. Com esta extensão, pode definir
+se o conteúdo fica **em cima**, no **meio** ou **em baixo** — para todo o contentor
+e, se necessário, de forma diferente para colunas individuais. Encontrará esta configuração na
+caixa de diálogo **Editar contentor**, no separador **Layout**.
 
-Nos smartphones, as colunas ficam abaixo uma da outra e só chegam até a altura de você
-Conteúdo. Não é necessário alinhamento ali e nenhum pode ser visto. 
+Nos smartphones, as colunas estão dispostas uma abaixo da outra e têm apenas a altura do seu
+conteúdo. Nesses dispositivos, não é necessário qualquer alinhamento e este não é visível.
 
 ## O que os leitores veem
 
-O título ou parágrafo no tamanho selecionado e o conteúdo da coluna no
-orientação escolhida. Para que isso funcione, duas coisas precisam ser feitas no Studio.
-em torno do qual a administração do estúdio
-o CSS Personalizado com a extensão Typo (Content Designer → Custom CSS)
-e a tipografia do tema (aparência e sensação → tipografia). Se o CSS personalizado estiver faltando, 
-Leitores veem o tamanho normal e o conteúdo das colunas para os níveis adicionais
-Top — O conteúdo em si permanece correto. 
+O título ou parágrafo no tamanho selecionado e o conteúdo das colunas na
+alinhamento selecionado. Para que isto funcione, é necessário que duas coisas
+estejam configuradas no Studio, das quais a administração do Studio
+se encarrega: o CSS personalizado com a extensão Typo (Content Designer → CSS Personalizado)
+e a tipografia do tema (Look & Feel → Tipografia). Se faltar o CSS personalizado,
+os leitores verão, nos níveis adicionais, o tamanho normal e o conteúdo das colunas
+na parte superior — o conteúdo em si permanece correto.
 
-## O que você vê no editor CMS
+## O que vê no editor do CMS
 
-- No campo de seleção de formato da barra de ferramentas, o grupo **"MAN Typo-Scale"** aparece 
-  com tamanho e altura de linha por degrau, por exemplo, "Corpo L 18/27". O anterior
-  As entradas são ocultas porque a escala as contém completamente. 
-- A caixa de seleção mostra o nível ativo, por exemplo, "Display 2XL · 72“. 
-- Blocos com um passo adicional possuem um rótulo escuro no canto superior direito
-  Nivele, por exemplo, 'display-2XL' — assim você pode reconhecê-los num instante. 
-- No diálogo, **Editar o layout → contêiner** está listado sob o
-  Botões de layout da seção "Alinhamento Vertical". As Colunas
-  No editor, mostre imediatamente a orientação selecionada. 
+- No campo de seleção de formato da barra de ferramentas, aparece o grupo **«Escala tipográfica MAN»**
+  com o tamanho e a altura da linha por nível, por exemplo, «Body L 18/27». As entradas anteriores
+  são ocultadas, porque a escala as inclui na totalidade.
+- O campo de seleção mostra o nível ativo, por exemplo, «Display 2XL · 72».
+- Os blocos com um nível adicional apresentam, no canto superior direito, uma etiqueta escura com
+  o respetivo nível, por exemplo, `display-2xl` — assim, é possível reconhecê-los à primeira vista.
+- Na caixa de diálogo **Editar contentor → Layout**, por baixo dos
+  botões de layout, encontra-se a secção **«Alinhamento vertical»**. As colunas
+  no editor mostram imediatamente o alinhamento selecionado.
 
-## Quando a expansão estiver pronta
+## Quando a extensão fica disponível
 
-O Studio não carrega a extensão quando você abre uma página, mas apenas quando você 
-a primeira vez que você insere um **Bloco Personalizado**, ou
-. Depois disso, estará disponível em todas as páginas até você abrir a aba Navegador
-recarregue. Como ligar especificamente pode ser encontrado em "Passo a passo".
+O Studio não carrega a extensão logo ao abrir uma página, mas apenas
+quando insere ou
+edita um **bloco personalizado** pela primeira vez. Depois disso, fica disponível em todas as páginas até que atualize o separador
+do navegador. Para saber como ativá-la especificamente, consulte «Passo a passo».

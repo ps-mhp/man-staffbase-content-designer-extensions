@@ -1,68 +1,72 @@
 # FAQ
 
-**Domanda:** Nel campo di selezione del formato, manca il gruppo "MAN Typo Scale". Cosa fare? 
+**Domanda:** Nel campo di selezione del formato manca il gruppo “MAN Typo-Skala”. Cosa fare?
 
-Risposta: Studio non carica l'estensione finché non si tratta di un blocco personalizzato
-e se ne dimentica quando la scheda del browser viene ricaricata. 
-Accendilo come descritto in "Accensione passo dopo passo → estensione" 
-. Se il gruppo manca ancora dopo, Studio
-Cambiato — Per favore, segnala questo al team che mantiene i widget. 
+Risposta: Studio carica l’estensione solo quando viene inserito o modificato un blocco personalizzato
+e la disattiva al riavvio della scheda del browser.
+Attivatela come descritto nella sezione «Passo dopo passo → Attivare l’estensione».
+Se il gruppo continua a mancare, è probabile che Studio
+sia stato modificato — segnalatelo al team che gestisce i widget.
 
-**Domanda:** Posso aggiungere l'estensione come elemento di base sulla pagina? 
+**Domanda:** Posso inserire l’estensione come modulo nella pagina?
 
-Risposta: No. Non ha contenuto visibile e quindi non appare in
-nella lista Seleziona blocchi. Funziona solo nel campo selezione Formato di Titolo e
-Testo e nel dialogo "Modifica contenitore". 
+Risposta: No. Non ha contenuti visibili e pertanto non compare nell’
+elenco «Seleziona blocco». È attiva solo nel campo di selezione del formato di titolo e
+testo e nella finestra di dialogo «Modifica contenitore».
 
-**Domanda:** Vedo il livello nell'editor, ma non nella pagina pubblicata. 
+**Domanda:** Nell’editor vedo il gradino, ma non nella pagina pubblicata.
 
-Risposta: Allora il CSS personalizzato con l'estensione per errori di battitura manca in Studio o è
-Deprecato. Questo è ciò che organizza l'amministrazione dello studio. 
+Risposta: In tal caso, in Studio manca il CSS personalizzato con l’estensione tipografica oppure è
+obsoleto. Se ne occuperà l’amministrazione di Studio.
 
-**Domanda:** C'è un passaggio nella pagina pubblicata, ma non nell'editor. 
+**Domanda:** Sulla pagina pubblicata si vede un livello, nell’editor no.
 
-Risposta: L'estensione non è ancora attiva nella scheda del browser. Toggle
-Inseriscilo e apri di nuovo la pagina. 
+Risposta: L’estensione non è ancora attiva nella scheda del browser. Attivala
+e riapri la pagina.
 
-**Domanda:** "Display L" appare grande quanto "H1" o più piccolo del previsto. 
+**Domanda:** Un titolo sulla pagina pubblicata ha le stesse dimensioni di un “H1”, anche se volevo un livello di visualizzazione.
 
-Risposta: La tipografia tematica in Studio (look & feel → tipografia) è ancora presente
-non impostato alla scala MAN. Questo è impostato dall'amministrazione dello studio. 
+Risposta: Il titolo non ha ancora un livello assegnato. Un titolo senza livello selezionato
+è sempre impostato su H1 (32 px) — questo vale per ogni nuovo titolo e per i titoli delle
+versioni precedenti, che l’editor visualizzava ancora come “Display L” o “Display S”
+. Posizionate il cursore nel titolo, selezionate il livello sotto
+**«Scala tipografica MAN»** (verrà contrassegnato con un’etichetta scura) e cliccate
+su **Salva**.
 
-**Domanda:** Dopo aver duplicato, la copia ha perso il suo stadio. 
+**Domanda:** Dopo la duplicazione, la copia ha perso il proprio livello.
 
-Risposta: Questo è noto: la copia riceve un nuovo identificatore senza livello. 
-Resetta il livello sulla copia. 
+Risposta: È un fenomeno noto: alla copia viene assegnato un nuovo identificativo senza livello.
+Impostare nuovamente il livello sulla copia.
 
-**Domanda:** Dopo il passaggio dal paragrafo a H2, l'intestazione è di dimensione normale, anche se in precedenza era impostato "Corpo L". 
+**Domanda:** Dopo essere passati da un paragrafo a un H2, il titolo ha dimensioni normali, sebbene in precedenza fosse impostato «Body L».
 
-Risposta: Intenzionale: I livelli corporei si applicano solo ai paragrafi. Rimossa l'estensione
-Il livello che non corrisponde più alla prossima volta che salvi. 
+Risposta: È intenzionale: i livelli «Body» si applicano solo ai paragrafi. L’estensione rimuove
+il livello non più appropriato al prossimo salvataggio.
 
-**Domanda:** Nel dialogo "Modifica contenitore", manca la sezione "Allineamento verticale". 
+**Domanda:** Nella finestra di dialogo «Modifica contenitore» manca la sezione «Allineamento verticale».
 
-Risposta: L'estensione non è ancora attiva nella scheda del browser. Toggle
-Puoi attivarlo come descritto in "Attiva → estensione passo dopo passo". 
-e riapri la dialogo. La sezione è disponibile solo nella scheda
-**Layout**. 
+Risposta: L’estensione non è ancora attiva nella scheda del browser. Attivatela
+come descritto in «Passo dopo passo → Attivare l’estensione»
+e riaprite la finestra di dialogo. La sezione è disponibile solo nella scheda
+**Layout**.
 
-**Domanda:** Perché non vedo il targeting nella pagina pubblicata? 
+**Domanda:** Perché non vedo l’allineamento nella pagina pubblicata?
 
-Risposta: Prima di tutto, verifica se le colonne contengono quantità diverse di contenuto — 
-Se sono della stessa lunghezza, non c'è nulla da fare. Stare in piedi sullo smartphone
-le colonne tra loro; lì l'allineamento deliberatamente non funziona. Se manca,
-anche sul desktop, il CSS personalizzato in Studio è deprecato. Questo
-Amministrazione dello studio. 
+Risposta: Verifichi innanzitutto se le colonne contengono quantità diverse di contenuto —
+se hanno la stessa lunghezza, non c’è nulla da allineare. Sullo smartphone
+le colonne sono disposte una sotto l’altra; in quel caso l’allineamento non ha effetto, come previsto. Se manca
+anche sul desktop, il CSS personalizzato in Studio non è aggiornato. Se ne occupa l’
+amministrazione di Studio.
 
-**Domanda:** Cosa significa "like container" per una colonna? 
+**Domanda:** Cosa significa «come contenitore» per una colonna?
 
-Risposta: La colonna eredita l'orientamento superiore per l'intero contenitore
-è selezionato. Se selezioni superiore, centrale o inferiore, il
-Atteggiamento personale. 
+Risposta: La colonna adotta l’allineamento selezionato in alto per l’intero contenitore
+. Se si seleziona «in alto», «al centro» o «in basso», a quella colonna si applica la
+propria impostazione.
 
-**Domanda:** Come posso disattivare l'estensione di debug nel mio browser? 
+**Domanda:** Come si disattiva l’estensione per la ricerca degli errori nel browser?
 
-Risposta: In Studio, apri la console sviluppatore del browser e digita
-'localStorage.setItem("sbt-typo-scale", "off")', poi ricarica la scheda. 
-Riattivalo con 'localStorage.removeItem("sbt-typo-scale")'. Funziona
-Solo nel tuo browser.
+Risposta: Aprire la console di sviluppo del browser in Studio e inserire
+`localStorage.setItem("sbt-typo-scale", "off")`, quindi ricaricate la scheda.
+Per riattivarla, utilizzate `localStorage.removeItem("sbt-typo-scale")`. Questa operazione ha effetto
+solo nel vostro browser.
